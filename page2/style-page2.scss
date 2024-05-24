@@ -1,0 +1,1936 @@
+@import './color-page2.scss';
+@import './global-page2.scss';
+@import './responsive-page2.scss';
+
+:root{
+    box-sizing: 0;
+    padding: 0;
+    margin: 0;
+}
+// header scss
+
+body{
+    @include flex-center-column;
+    padding: 0;
+    margin: 0;
+    font-family: $font-stack;
+    background: linear-gradient(to bottom, $main-color-background,$second-color-background);
+    
+/////////smart phone max 768
+
+    @media only screen and (max-width:$size-smartphone) {
+         
+        header{
+            overflow: hidden;
+            font-family: $font-stack;
+            height: 80px;
+            width: 100%;
+            margin-bottom: 50px;
+            .nav-bar{
+                z-index: 2;
+                position: fixed;
+                margin: 0;
+                padding: 0;
+                height: 13%;
+                width: 100%;
+                @include flex-center;
+                background-color:$primary-background-color;
+        
+            .nav-bar-main{
+                overflow: hidden;
+                width: 1232px;
+                height:50%;
+                opacity: 0px;
+                margin: 0;
+                @include flex-center;
+                justify-content: start;
+                margin: 0 20px;
+                padding: 0;
+                .nav-bar-left{
+                    overflow: hidden;
+                    @include font-size-lighter-sm;
+                    display: none;
+                    cursor: pointer;
+                    gap: 50px;
+                    
+        
+                    button{
+                        cursor: pointer;
+                        width: 167px;
+                        height: 40px;
+                        border: 0 solid;
+                        border-radius: 6px;
+                        font-family: $font-stack;
+                        @include font-size-lighter-sm;
+                        color:$font-color-white ;
+                        background-color:$items-color-primary;
+                    }
+        
+                    .darkMod{
+                        overflow: hidden;
+                        width: 40px;
+                        height: 40px;
+                        @include flex-center;
+                        background-color: $primary-background-color;
+                        border: 1px solid $main-color-border;
+                        border-radius: 6px;
+                    }
+                    .close {            
+                        transition: all 1ms ease;
+                        position: absolute;
+                        top: 20px;
+                        right: 30px;
+                        transition: all 200ms;
+                        font-size: 30px;
+                        font-weight: bold;
+                        text-decoration: none;
+                        color: #333;
+                      }
+                    .darkMod-select{
+                        visibility: hidden;
+                        color: $font-color-black;
+                    @include flex-center-column;
+        
+                    font-family: $font-stack;
+                    gap: 10px;
+                    position: absolute;
+                    border-radius: 8px;
+                    background-color: $primary-background-color;
+                    border: 1px solid $darkMod-border;
+                    margin: 0;
+                    margin-top: 250px;
+                    margin-left: 200px;
+                    width: 250px;
+                    height: 180px;
+                    :last-child{
+                        border: none;
+                    }
+                    p{
+                        @include font-size-lighter-sm;
+                        padding: 0;
+                        margin: 0;
+                        @include flex-center;
+                        border-bottom: 1px solid $darkMod-border;
+                        width: 80%;
+                        height: 20%;
+                        gap: 5px;
+                        padding-bottom: 10px;
+                        img{
+                            position: absolute;
+                            @include flex-center;
+                            right: 40px;
+                            margin: 0;
+                            margin-top: 5px;
+                            padding: 0;
+                            width: 22px;
+                            height: 22px;
+                        }
+                    }
+                }
+                .darkMod-select:target {
+        
+                    visibility: visible;
+                    opacity: 1;
+                  }
+        
+        
+                }
+                .nav-bar-right{
+                    overflow: hidden;
+                    width: 90%;
+                    gap: 20px;
+                 @include flex-center;
+                
+                //////
+                    .menubar{
+                       margin: 0;
+                        @include font-size-bold-md-lg;
+                     }      
+                 strong{
+                    margin: 0;
+                    width: 100%;
+                    @include font-size-bold-md;
+                 }
+                 .nav-bar-ul{
+                    width: 100%;
+                    height: 100%;
+                    gap: 20px;
+                    display: none;
+                    justify-content:start;
+                    list-style: none;
+                    font-family: $font-stack;
+                    margin: 0;
+                    padding: 0;
+                        a{
+                            @include font-size-lighter-sm;
+                            color: $font-color-black;
+                            width: 15%;
+                        cursor: pointer;
+                            text-decoration-line: none;
+                        }
+                    :nth-child(2){
+                        color: $items-color-primary;
+                        @include font-size-lighter-sm;
+                        li{
+                        position: absolute;
+                        width: 50%;
+                        height: 100%;
+                       }}
+               
+        
+                }
+                }
+            }
+            ///finish nav bar 
+            }
+        }
+        
+        //// main page 2
+        
+        main{
+            font-family: $font-stack;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        width:100%;
+        height: 1000px;
+        @include flex-center-column;
+        justify-content: start;
+        
+        .about{
+            @include flex-center-column;
+            justify-content: start;
+            width: 100%;
+            gap: 50px;
+            height:60%;
+            margin: 0;
+        
+            &-up{
+                @include flex-center-column;
+                width: 90%;
+                height: 350px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 24px;
+                    object-fit: cover;
+                }
+            }
+            &-left{
+                @include flex-center-column;
+                justify-content: start;
+                width: 90%;
+                height: 80%;
+                margin: 0;
+
+                img{
+                    display: none;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 24px;
+                    object-fit: cover;
+                }
+                &-text{
+                    border-radius: 24px;
+                    box-shadow: 0 2px 2px #00000008;
+                    border: 1px solid #F5F6F8;
+                    @include flex-center-column;
+                    width: 100%;
+                    height: 45%;
+                    margin-top: 50px;
+                    .text-up{
+                        @include flex-center;
+                        width: 100%;
+                        height:100px;
+                        margin: 0;
+                        padding: 0;
+                        gap: 20px;
+                        section{
+                            border-radius: 24px;
+                            border: 1px solid #F5F5F5;
+                            width: 230px;
+                            height: 112px;
+                            background-color:$color-background-card;
+                            @include font-size-bold-md-p;
+                            font-family: $font-stack;
+                            @include flex-center-column;
+                            text-align: start;
+                            align-items: start;
+                            padding: 0;
+                            padding-right: 20px;
+                            margin: 0;
+                            text-align: start;
+                            box-shadow: 0 2px 2px #00000008;
+                            :last-child{
+                            @include font-size-lighter-sm-p;
+                            color: $font-color-gray-opacity;
+                        }                    
+                        }
+                    }
+                    .text-down{
+                        width: 100%;
+                        height:100px;
+                        @include flex-center;
+                        width: 100%;
+                        height:100px;
+                        margin: 0;
+                        margin-top: 30px;
+                        padding: 0;
+                        gap: 20px;
+                        section{
+                            border: 1px solid #F5F5F5;
+                            border-radius: 24px;
+                            width: 230px;
+                            height: 112px;
+                            background-color:$color-background-card;
+                            @include font-size-bold-md-p;
+                            font-family: $font-stack;
+                            @include flex-center-column;
+                            align-items: start;
+                            padding: 0;
+                            padding-right: 20px;
+                            margin: 0;
+                            box-shadow: 0 2px 2px #00000008;
+                            :last-child{
+                            @include font-size-lighter-sm-p;
+                            color: $font-color-gray-opacity;
+                        }                    
+                        }
+                    }
+                }
+            }
+            &-right{
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                gap: 10px;
+                @include flex-center-column;
+              
+                h1{
+                    margin: 0;
+                    font-family: $font-stack;
+                    @include font-size-bold-md-p;
+        
+                }
+                h2{
+                    margin: 0;
+                    color: $font-color-gray-opacity;
+                    font-family: $font-stack;
+                    @include font-size-lighter-md-p;
+        
+                }
+                p{
+                    padding: 20px;
+                    @include font-size-lighter-sm-p; 
+                }
+            }
+        
+        }
+        
+        }
+        
+        
+        
+        
+        
+        ///// ------ finsh nav bar + header + main header -----////
+        
+        
+        /// finish main body-----
+        
+        
+        
+        
+        //footer scss
+        footer{
+            font-family: $font-stack;
+            margin-top: 100px;
+            width: 90%;
+            height: 600px;
+            @include flex-center-column;
+            justify-content: start;
+            margin: 0;
+            overflow: hidden;
+            .footer-title{
+                gap: 20px;
+                @include flex-center;
+                h2{
+                    font-size: 10px;
+                    font-weight: light;
+                }
+                .footer-line{
+                    width: 100px;
+                    height:0;
+                border: 1px solid $footr-line;
+            }}
+        //--------footer main
+            .footer-main{
+            width: 100%;
+            height: 400px;
+            gap: 100px;
+            @include flex-center-column;
+            justify-content: start;
+            &-right{
+                margin: 0;
+                width: 100%;
+                height:40%;
+                @include flex-center;
+                gap: 15px;
+                flex-wrap: wrap;
+                .right-footer{
+                    @include flex-center-column;
+                    width: 50%;
+                    height: 80%;
+                    gap: 10px;
+                strong{
+                    border: 1px solid #8080802b;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 16px;
+                    @include font-size-lighter-sm-p;
+                    @include flex-center;
+                    color: $items-color-primary;
+                    gap: 2px;
+                    i{
+                        @include font-size-bold-md-p;
+                    }
+                  
+                }}
+                address{
+                    border: 1px solid #8080802b;
+                    border-radius: 16px;
+                    width: 40%;
+                    height: 80%;
+                    font-family: $font-stack;
+                    @include font-size-lighter-sm-p;
+                    @include flex-center-column;
+                   span{
+                    color: $items-color-primary;
+                    @include font-size-bold-md-p;
+                   }
+                  p{
+                    font-family: $font-stack;
+                  }
+                }
+            }
+            /// footer main left 
+                
+            &-left{
+                width: 100%;
+                height: 30%;
+                font-family: $font-stack;
+                @include flex-center-column;
+                align-items: start;
+                justify-content: start;
+                h2{
+                    width: 100%;
+                    @include font-size-bold-md-p;
+                }
+                p{
+                    @include flex-center;
+                    justify-content: center;
+                    width: 100%;
+                    @include font-size-lighter-sm-p;
+                }
+                .side-email{
+                    @include flex-center;
+                    position: relative;
+                    align-items: start;
+                    justify-content: center;
+                    width: 100%;
+                    .button-footer{
+                        position: relative;
+                        height: 60px;
+                        width:100%;
+                    }
+                    input{
+                        overflow: hidden;
+
+                        width: 280px ;
+                        height: 48px;
+                        font-family: $font-stack;
+                        padding: 5px;
+                        padding-right: 20px;
+                        @include flex-center;
+                        text-align: start;
+                        margin: 0;
+                        border-radius: 10px;
+                        border: 1px solid $footer-border;
+                        @include font-size-lighter-sm;
+                    }
+                    button{
+                        left: 9px;
+                        top: 8px;
+                        padding: 0;
+                        margin: 0;
+                        position: absolute;
+                        width: 80px;
+                        height: 45px;
+                        font-family: $font-stack;
+                        @include font-size-lighter-sm;
+                        color: $font-color-white;
+                        border: none;
+                        border-radius:8px;
+                        background-color: $items-color-primary;
+                    }
+                }
+            }
+        
+        
+        }
+        
+        .footer-down{
+            overflow: hidden;
+            margin: 0;
+            margin-top: 5PX;
+            width: 100%;
+            height: 10%;
+            h3{
+                color: $font-color-gray-opacity;
+                font-family: $font-stack;
+                @include font-size-lighter-sm-p;
+            }
+        }
+        
+        
+        }
+        
+
+
+
+    }
+
+
+
+
+
+
+//////// tablet min 769  max 1024
+    @media only screen and (min-width:$size-min-tablet) and (max-width:$size-tablet) {
+      
+        header{
+            overflow: hidden;
+            font-family: $font-stack;
+            height: 80px;
+            width: 100%;
+            margin-bottom: 50px;
+            .nav-bar{
+                z-index: 2;
+                position: fixed;
+                margin: 0;
+                padding: 0;
+                height: 13%;
+                width: 100%;
+                @include flex-center;
+                background-color:$primary-background-color;
+        
+            .nav-bar-main{
+                overflow: hidden;
+                width: 1232px;
+                height:50%;
+                opacity: 0px;
+                margin: 0;
+                @include flex-center;
+                justify-content: start;
+                margin: 0 20px;
+                padding: 0;
+                .nav-bar-left{
+                    overflow: hidden;
+                    @include font-size-lighter-sm;
+                    display: none;
+                    cursor: pointer;
+                    gap: 50px;
+                    
+        
+                    button{
+                        cursor: pointer;
+                        width: 167px;
+                        height: 40px;
+                        border: 0 solid;
+                        border-radius: 6px;
+                        font-family: $font-stack;
+                        @include font-size-lighter-sm;
+                        color:$font-color-white ;
+                        background-color:$items-color-primary;
+                    }
+        
+                    .darkMod{
+                        overflow: hidden;
+                        width: 40px;
+                        height: 40px;
+                        @include flex-center;
+                        background-color: $primary-background-color;
+                        border: 1px solid $main-color-border;
+                        border-radius: 6px;
+                    }
+                    .close {            
+                        transition: all 1ms ease;
+                        position: absolute;
+                        top: 20px;
+                        right: 30px;
+                        transition: all 200ms;
+                        font-size: 30px;
+                        font-weight: bold;
+                        text-decoration: none;
+                        color: #333;
+                      }
+                    .darkMod-select{
+                        visibility: hidden;
+                        color: $font-color-black;
+                    @include flex-center-column;
+        
+                    font-family: $font-stack;
+                    gap: 10px;
+                    position: absolute;
+                    border-radius: 8px;
+                    background-color: $primary-background-color;
+                    border: 1px solid $darkMod-border;
+                    margin: 0;
+                    margin-top: 250px;
+                    margin-left: 200px;
+                    width: 250px;
+                    height: 180px;
+                    :last-child{
+                        border: none;
+                    }
+                    p{
+                        @include font-size-lighter-sm;
+                        padding: 0;
+                        margin: 0;
+                        @include flex-center;
+                        border-bottom: 1px solid $darkMod-border;
+                        width: 80%;
+                        height: 20%;
+                        gap: 5px;
+                        padding-bottom: 10px;
+                        img{
+                            position: absolute;
+                            @include flex-center;
+                            right: 40px;
+                            margin: 0;
+                            margin-top: 5px;
+                            padding: 0;
+                            width: 22px;
+                            height: 22px;
+                        }
+                    }
+                }
+                .darkMod-select:target {
+        
+                    visibility: visible;
+                    opacity: 1;
+                  }
+        
+        
+                }
+                .nav-bar-right{
+                    overflow: hidden;
+                    width: 90%;
+                    gap: 20px;
+                 @include flex-center;
+                
+                //////
+                    .menubar{
+                       margin: 0;
+                        @include font-size-bold-md-lg;
+                     }      
+                 strong{
+                    margin: 0;
+                    width: 100%;
+                    @include font-size-bold-md;
+                 }
+                 .nav-bar-ul{
+                    width: 100%;
+                    height: 100%;
+                    gap: 20px;
+                    display: none;
+                    justify-content:start;
+                    list-style: none;
+                    font-family: $font-stack;
+                    margin: 0;
+                    padding: 0;
+                        a{
+                            @include font-size-lighter-sm;
+                            color: $font-color-black;
+                            width: 15%;
+                        cursor: pointer;
+                            text-decoration-line: none;
+                        }
+                    :nth-child(2){
+                        color: $items-color-primary;
+                        @include font-size-lighter-sm;
+                        li{
+                        position: absolute;
+                        width: 50%;
+                        height: 100%;
+                       }}
+               
+        
+                }
+                }
+            }
+            ///finish nav bar 
+            }
+        }
+        
+        //// main page 2
+        
+        main{
+            font-family: $font-stack;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        width:100%;
+        height: 1100px;
+        @include flex-center-column;
+        
+        .about{
+            @include flex-center-column;
+            justify-content: start;
+            width: 100%;
+            gap: 50px;
+            height:100%;
+            margin: 0;
+        
+            &-up{
+                @include flex-center-column;
+                width: 90%;
+                height: 350px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 24px;
+                    object-fit: cover;
+                }
+            }
+            &-left{
+                @include flex-center-column;
+                justify-content: start;
+                width: 90%;
+                height: 80%;
+                margin: 0;
+                margin-top: 100px;
+
+                img{
+                    display: none;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 24px;
+                    object-fit: cover;
+                }
+                &-text{
+                    border-radius: 24px;
+                    box-shadow: 0 2px 2px #00000008;
+                    border: 1px solid #F5F6F8;
+                    @include flex-center-column;
+                    width: 100%;
+                    height: 45%;
+                    .text-up{
+                        @include flex-center;
+                        width: 100%;
+                        height:100px;
+                        margin: 0;
+                        padding: 0;
+                        gap: 20px;
+                        section{
+                            border-radius: 24px;
+                            border: 1px solid #F5F5F5;
+                            width: 230px;
+                            height: 112px;
+                            background-color:$color-background-card;
+                            @include font-size-bold-md-p;
+                            font-family: $font-stack;
+                            @include flex-center-column;
+                            text-align: start;
+                            align-items: start;
+                            padding: 0;
+                            padding-right: 20px;
+                            margin: 0;
+                            text-align: start;
+                            box-shadow: 0 2px 2px #00000008;
+                            :last-child{
+                            @include font-size-lighter-sm-p;
+                            color: $font-color-gray-opacity;
+                        }                    
+                        }
+                    }
+                    .text-down{
+                        width: 100%;
+                        height:100px;
+                        @include flex-center;
+                        width: 100%;
+                        height:100px;
+                        margin: 0;
+                        margin-top: 30px;
+                        padding: 0;
+                        gap: 20px;
+                        section{
+                            border: 1px solid #F5F5F5;
+                            border-radius: 24px;
+                            width: 230px;
+                            height: 112px;
+                            background-color:$color-background-card;
+                            @include font-size-bold-md-p;
+                            font-family: $font-stack;
+                            @include flex-center-column;
+                            align-items: start;
+                            padding: 0;
+                            padding-right: 20px;
+                            margin: 0;
+                            box-shadow: 0 2px 2px #00000008;
+                            :last-child{
+                            @include font-size-lighter-sm-p;
+                            color: $font-color-gray-opacity;
+                        }                    
+                        }
+                    }
+                }
+            }
+            &-right{
+                padding: 0;
+                margin: 0;
+                margin-top: 200px;
+                width: 100%;
+                gap: 10px;
+                @include flex-center-column;
+              
+                h1{
+                    margin: 0;
+                    font-family: $font-stack;
+                    @include font-size-bold-md-p;
+        
+                }
+                h2{
+                    margin: 0;
+                    color: $font-color-gray-opacity;
+                    font-family: $font-stack;
+                    @include font-size-lighter-md-p;
+        
+                }
+                p{
+                    padding: 20px;
+                    @include font-size-lighter-sm-p; 
+                }
+            }
+        
+        }
+        
+        }
+        
+        
+        
+        
+        
+        ///// ------ finsh nav bar + header + main header -----////
+        
+        
+        /// finish main body-----
+        
+        
+        
+        
+        //footer scss
+        footer{
+            font-family: $font-stack;
+            margin-top: 100px;
+            width: 90%;
+            height: 800px;
+            @include flex-center-column;
+            justify-content: start;
+            margin: 0;
+            overflow: hidden;
+            .footer-title{
+                gap: 20px;
+                @include flex-center;
+                h2{
+                    font-size: 10px;
+                    font-weight: light;
+                }
+                .footer-line{
+                    width: 100px;
+                    height:0;
+                border: 1px solid $footr-line;
+            }}
+        //--------footer main
+            .footer-main{
+            width: 100%;
+            height: 400px;
+            gap: 100px;
+            @include flex-center-column;
+            justify-content: start;
+            &-right{
+                margin: 0;
+                width: 100%;
+                height:40%;
+                @include flex-center;
+                gap: 15px;
+                flex-wrap: wrap;
+                .right-footer{
+                    @include flex-center-column;
+                    width: 50%;
+                    height: 80%;
+                    gap: 10px;
+                strong{
+                    border: 1px solid #8080802b;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 16px;
+                    @include font-size-lighter-sm-p;
+                    @include flex-center;
+                    color: $items-color-primary;
+                    gap: 2px;
+                    i{
+                        @include font-size-bold-md-p;
+                    }
+                  
+                }}
+                address{
+                    border: 1px solid #8080802b;
+                    border-radius: 16px;
+                    width: 40%;
+                    height: 80%;
+                    font-family: $font-stack;
+                    @include font-size-lighter-sm-p;
+                    @include flex-center-column;
+                   span{
+                    color: $items-color-primary;
+                    @include font-size-bold-md-p;
+                   }
+                  p{
+                    font-family: $font-stack;
+                  }
+                }
+            }
+            /// footer main left 
+                
+            &-left{
+                width: 100%;
+                height: 30%;
+                font-family: $font-stack;
+                @include flex-center-column;
+                align-items: start;
+                justify-content: start;
+                h2{
+                    width: 100%;
+                    @include font-size-bold-md-p;
+                }
+                p{
+                    @include flex-center;
+                    justify-content: center;
+                    width: 100%;
+                    @include font-size-lighter-sm-p;
+                }
+                .side-email{
+                    @include flex-center;
+                    position: relative;
+                    align-items: start;
+                    justify-content: center;
+                    width: 100%;
+                    .button-footer{
+                        position: relative;
+                        height: 60px;
+                        width:100%;
+                    }
+                    input{
+                        overflow: hidden;
+
+                        width: 280px ;
+                        height: 48px;
+                        font-family: $font-stack;
+                        padding: 5px;
+                        padding-right: 20px;
+                        @include flex-center;
+                        text-align: start;
+                        margin: 0;
+                        border-radius: 10px;
+                        border: 1px solid $footer-border;
+                        @include font-size-lighter-sm;
+                    }
+                    button{
+                        left: 9px;
+                        top: 8px;
+                        padding: 0;
+                        margin: 0;
+                        position: absolute;
+                        width: 80px;
+                        height: 45px;
+                        font-family: $font-stack;
+                        @include font-size-lighter-sm;
+                        color: $font-color-white;
+                        border: none;
+                        border-radius:8px;
+                        background-color: $items-color-primary;
+                    }
+                }
+            }
+        
+        
+        }
+        
+        .footer-down{
+            overflow: hidden;
+            margin: 0;
+            margin-top: 5PX;
+            width: 100%;
+            height: 10%;
+            h3{
+                color: $font-color-gray-opacity;
+                font-family: $font-stack;
+                @include font-size-lighter-sm-p;
+            }
+        }
+        
+        
+        }
+        
+
+
+
+        
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////   laptop min 1025 max 1279
+    @media only screen and (min-width:$size-min-laptop) and (max-width:$size-laptop) {
+       
+
+        header{
+            overflow: hidden;
+            font-family: $font-stack;
+            height: 100px;
+            width: 100%;
+            margin-bottom: 50px;
+            .nav-bar{
+                z-index: 2;
+                position: fixed;
+                margin: 0;
+                padding: 0;
+                height: 13%;
+                width: 100%;
+                @include flex-center;
+                background-color:$primary-background-color;
+        
+            .nav-bar-main{
+                overflow: hidden;
+                width: 1232px;
+                height:50%;
+                gap: 0px;
+                opacity: 0px;
+                margin: 0;
+                @include flex-center;
+        
+                .nav-bar-left{
+                    overflow: hidden;
+                    @include font-size-lighter-sm;
+                    @include flex-center;
+                    cursor: pointer;
+                    gap: 20px;
+                    
+        
+                    button{
+                        cursor: pointer;
+                        width: 167px;
+                        height: 40px;
+                        border: 0 solid;
+                        border-radius: 6px;
+                        font-family: $font-stack;
+                        @include font-size-lighter-sm;
+                        color:$font-color-white ;
+                        background-color:$items-color-primary;
+                    }
+        
+                    .darkMod{
+                        overflow: hidden;
+                        width: 40px;
+                        height: 40px;
+                        @include flex-center;
+                        background-color: $primary-background-color;
+                        border: 1px solid $main-color-border;
+                        border-radius: 6px;
+                    }
+                    .close {            
+                        transition: all 1ms ease;
+                        position: absolute;
+                        top: 20px;
+                        right: 30px;
+                        transition: all 200ms;
+                        font-size: 30px;
+                        font-weight: bold;
+                        text-decoration: none;
+                        color: #333;
+                      }
+                    .darkMod-select{
+                        visibility: hidden;
+                        color: $font-color-black;
+                    @include flex-center-column;
+        
+                    font-family: $font-stack;
+                    gap: 10px;
+                    position: absolute;
+                    border-radius: 8px;
+                    background-color: $primary-background-color;
+                    border: 1px solid $darkMod-border;
+                    margin: 0;
+                    margin-top: 250px;
+                    margin-left: 200px;
+                    width: 250px;
+                    height: 180px;
+                    :last-child{
+                        border: none;
+                    }
+                    p{
+                        @include font-size-lighter-sm;
+                        padding: 0;
+                        margin: 0;
+                        @include flex-center;
+                        border-bottom: 1px solid $darkMod-border;
+                        width: 80%;
+                        height: 20%;
+                        gap: 5px;
+                        padding-bottom: 10px;
+                        img{
+                            position: absolute;
+                            @include flex-center;
+                            right: 40px;
+                            margin: 0;
+                            margin-top: 5px;
+                            padding: 0;
+                            width: 22px;
+                            height: 22px;
+                        }
+                    }
+                }
+                .darkMod-select:target {
+        
+                    visibility: visible;
+                    opacity: 1;
+                  }
+        
+        
+                }
+                .nav-bar-right{
+                    overflow: hidden;
+                    width: 70%;
+                    gap: 20px;
+                 @include flex-center;
+                
+                //////
+                    .menubar{
+                       display:none;
+                        @include font-size-bold-md-lg;
+                     }
+                 
+               
+              
+                 strong{
+        
+                    width: 20%;
+                    @include font-size-bold-md;
+                 }
+                 .nav-bar-ul{
+                    width: 100%;
+                    height: 100%;
+                    gap: 20px;
+                    @include flex-center;
+                    justify-content:start;
+                    list-style: none;
+                    font-family: $font-stack;
+                    margin: 0;
+                    padding: 0;
+                        a{
+                            @include font-size-lighter-sm;
+                            color: $font-color-black;
+                            width: 15%;
+                        cursor: pointer;
+                            text-decoration-line: none;
+                        }
+                    :nth-child(2){
+                        color: $items-color-primary;
+                        @include font-size-lighter-sm;
+                        li{
+                        position: absolute;
+                        width: 50%;
+                        height: 100%;
+                       }}
+               
+        
+                }
+                }
+            }
+
+            ///finish nav bar 
+            }
+        }
+        
+        //// main page 2
+        
+        main{
+            font-family: $font-stack;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        width: 90%;
+        height: 800px;
+        @include flex-center;
+        
+        .about{
+            @include flex-center;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            gap: 50px;
+        
+            &-up{
+                display: none;
+            }
+
+            &-left{
+                @include flex-center-column;
+                justify-content: start;
+                width: 50%;
+                height: 100%;
+                img{
+                    width: 100%;
+                    height: 350px;
+                    border-radius: 24px;
+                    object-fit: cover;
+                }
+                &-text{
+                    border-radius: 24px;
+                    box-shadow: 0 2px 2px #00000008;
+                    border: 1px solid #F5F6F8;
+                    @include flex-center-column;
+                    width: 100%;
+                    height: 45%;
+                    .text-up{
+                        @include flex-center;
+                        width: 100%;
+                        height:100px;
+                        margin: 0;
+                        padding: 0;
+                        gap: 20px;
+                        section{
+                            border-radius: 24px;
+                            border: 1px solid #F5F5F5;
+                            width: 230px;
+                            height: 112px;
+                            background-color:$color-background-card;
+                            @include font-size-bold-md-lg;
+                            font-family: $font-stack;
+                            @include flex-center-column;
+                            align-items: start;
+                            padding: 0;
+                            padding-right: 20px;
+                            margin: 0;
+                            margin-right: 10px;
+                            text-align: start;
+                            box-shadow: 0 2px 2px #00000008;
+                            :last-child{
+                            @include font-size-lighter-md;
+                            color: $font-color-gray-opacity;
+                        }                    
+                        }
+                    }
+                    .text-down{
+                        width: 100%;
+                        height:100px;
+                        @include flex-center;
+                        width: 100%;
+                        height:100px;
+                        margin: 0;
+                        margin-top: 30px;
+                        padding: 0;
+                        gap: 20px;
+                        section{
+                            border: 1px solid #F5F5F5;
+                            border-radius: 24px;
+                            width: 230px;
+                            height: 112px;
+                            background-color:$color-background-card;
+                            @include font-size-bold-md-lg;
+                            font-family: $font-stack;
+                            @include flex-center-column;
+                            align-items: start;
+                            padding: 0;
+                            padding-right: 20px;
+                            margin: 0;
+                            margin-right: 10px;
+                            text-align: start;
+                            box-shadow: 0 2px 2px #00000008;
+                            :last-child{
+                            @include font-size-lighter-md;
+                            color: $font-color-gray-opacity;
+                        }                    
+                        }
+                    }
+                }
+            }
+            &-right{
+                padding: 0;
+                margin: 0;
+                width: 40%;
+                height: 100%;
+                gap: 10px;
+                @include flex-center-column;
+                justify-content: start;
+                text-align: start;
+                align-items: start;
+                h1{
+                    margin: 0;
+                    font-family: $font-stack;
+                    @include font-size-bold-lg;
+        
+                }
+                h2{
+                    margin: 0;
+                    color: $font-color-gray-opacity;
+                    font-family: $font-stack;
+                    @include font-size-lighter-md-lg;
+        
+                }
+                p{
+                    @include font-size-lighter-sm; 
+                }
+            }
+        
+        }
+        
+        }
+        
+        
+        
+        
+        
+        ///// ------ finsh nav bar + header + main header -----////
+        
+        
+        /// finish main body-----
+        
+        
+        
+        
+        //footer scss
+        footer{
+            font-family: $font-stack;
+            margin-top: 100px;
+            width: 100%;
+            @include flex-center-column;
+            margin: 0;
+            overflow: hidden;
+            .footer-title{
+                gap: 20px;
+                @include flex-center;
+                h2{
+                    @include font-size-bold-md;
+                }
+                .footer-line{
+                    width: 350px;
+                    height:0;
+                border: 1px solid $footr-line;
+            }}
+        //--------footer main
+            .footer-main{
+            width: 100%;
+            @include flex-center;
+            &-right{
+                margin: 0;
+                width: 40%;
+                @include flex-center-column;
+                align-items: end;
+                strong{
+                    @include font-size-lighter-sm;
+                    @include flex-center;
+                    gap: 30px;
+                    i{
+                        @include font-size-bold-md;
+                    }
+                  
+                }
+                address{
+                    width: 80%;
+                    height: 100px;
+                    font-family: $font-stack;
+                    @include font-size-lighter-sm;
+                    @include flex-center;
+                    gap: 10px;
+                    img{
+                        width: 24px;
+                    }
+                  p{
+                    font-family: $font-stack;
+                  }
+                }
+            }
+            /// footer main left 
+                
+            &-left{
+                width: 45%;
+                height: 100%;
+                font-family: $font-stack;
+                @include flex-center-column;
+                align-items: start;
+                h2{
+                    @include font-size-bold-md;
+                }
+                p{
+                    @include flex-center;
+                    justify-content: start;
+                    text-align: start;
+                    align-items: start;
+                    width: 100%;
+                    @include font-size-lighter-sm;
+                }
+                .side-email{
+                    @include flex-center;
+                    position: relative;
+                    align-items: end;
+                    justify-content: end;
+                    width: 100%;
+                    .button-footer{
+                        position: relative;
+                        height: 60px;
+                        width:400px;
+                    }
+                    input{
+                        position: relative;
+                        width: 100%;
+                        height: 48px;
+                        font-family: $font-stack;
+                        padding: 5px;
+                        margin: 0;
+                        border-radius: 10px;
+                        border: 1px solid $footer-border;
+                        @include font-size-lighter-sm;
+                    }
+                    button{
+                        left: 10px;
+                        top: 8px;
+                        padding: 0;
+                        margin: 0;
+                        position: absolute;
+                        width: 80px;
+                        height: 45px;
+                        font-family: $font-stack;
+                        @include font-size-lighter-sm;
+                        color: $font-color-white;
+                        border: none;
+                        border-radius:8px;
+                        background-color: $items-color-primary;
+                    }
+                }
+            }
+        
+        
+        }
+        
+        .footer-down{
+            margin: 0;
+            margin-top: 50PX;
+            width: 100%;
+            height: 110px;
+            h3{
+                color: $font-color-gray-opacity;
+                font-family: $font-stack;
+                @include font-size-lighter-sm;
+            }
+        }
+        
+        
+        }
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////   larg desktop min 1280  be more 
+    @media only screen and (min-width:$size-largdesktop){
+        
+
+        header{
+            overflow: hidden;
+            font-family: $font-stack;
+            height: 100px;
+            width: 100%;
+            margin-bottom: 50px;
+            .nav-bar{
+                z-index: 2;
+                position: fixed;
+                margin: 0;
+                padding: 0;
+                height: 13%;
+                width: 100%;
+                @include flex-center;
+                background-color:$primary-background-color;
+        
+            .nav-bar-main{
+                overflow: hidden;
+                width: 1232px;
+                height:50%;
+                gap: 0px;
+                opacity: 0px;
+                margin: 0;
+                @include flex-center;
+        
+                .nav-bar-left{
+                    overflow: hidden;
+                    @include font-size-lighter-sm;
+                    @include flex-center;
+                    cursor: pointer;
+                    gap: 20px;
+                    
+        
+                    button{
+                        cursor: pointer;
+                        width: 167px;
+                        height: 40px;
+                        border: 0 solid;
+                        border-radius: 6px;
+                        font-family: $font-stack;
+                        @include font-size-lighter-sm;
+                        color:$font-color-white ;
+                        background-color:$items-color-primary;
+                    }
+        
+                    .darkMod{
+                        overflow: hidden;
+                        width: 40px;
+                        height: 40px;
+                        @include flex-center;
+                        background-color: $primary-background-color;
+                        border: 1px solid $main-color-border;
+                        border-radius: 6px;
+                    }
+                    .close {            
+                        transition: all 1ms ease;
+                        position: absolute;
+                        top: 20px;
+                        right: 30px;
+                        transition: all 200ms;
+                        font-size: 30px;
+                        font-weight: bold;
+                        text-decoration: none;
+                        color: #333;
+                      }
+                    .darkMod-select{
+                        visibility: hidden;
+                        color: $font-color-black;
+                    @include flex-center-column;
+        
+                    font-family: $font-stack;
+                    gap: 10px;
+                    position: absolute;
+                    border-radius: 8px;
+                    background-color: $primary-background-color;
+                    border: 1px solid $darkMod-border;
+                    margin: 0;
+                    margin-top: 250px;
+                    margin-left: 200px;
+                    width: 250px;
+                    height: 180px;
+                    :last-child{
+                        border: none;
+                    }
+                    p{
+                        @include font-size-lighter-sm;
+                        padding: 0;
+                        margin: 0;
+                        @include flex-center;
+                        border-bottom: 1px solid $darkMod-border;
+                        width: 80%;
+                        height: 20%;
+                        gap: 5px;
+                        padding-bottom: 10px;
+                        img{
+                            position: absolute;
+                            @include flex-center;
+                            right: 40px;
+                            margin: 0;
+                            margin-top: 5px;
+                            padding: 0;
+                            width: 22px;
+                            height: 22px;
+                        }
+                    }
+                }
+                .darkMod-select:target {
+        
+                    visibility: visible;
+                    opacity: 1;
+                  }
+        
+        
+                }
+                .nav-bar-right{
+                    overflow: hidden;
+                    width: 70%;
+                    gap: 20px;
+                 @include flex-center;
+                
+                //////
+                    .menubar{
+                       display:none;
+                        @include font-size-bold-md-lg;
+                     }
+                 
+               
+              
+                 strong{
+        
+                    width: 20%;
+                    @include font-size-bold-md;
+                 }
+                 .nav-bar-ul{
+                    width: 100%;
+                    height: 100%;
+                    gap: 20px;
+                    @include flex-center;
+                    justify-content:start;
+                    list-style: none;
+                    font-family: $font-stack;
+                    margin: 0;
+                    padding: 0;
+                        a{
+                            @include font-size-lighter-sm;
+                            color: $font-color-black;
+                            width: 15%;
+                        cursor: pointer;
+                            text-decoration-line: none;
+                        }
+                    :nth-child(2){
+                        color: $items-color-primary;
+                        @include font-size-lighter-sm;
+                        li{
+                        position: absolute;
+                        width: 50%;
+                        height: 100%;
+                       }}
+               
+        
+                }
+                }
+            }
+
+            ///finish nav bar 
+            }
+        }
+        
+        //// main page 2
+        
+        main{
+            font-family: $font-stack;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        width: 90%;
+        height: 800px;
+        @include flex-center;
+        
+        .about{
+            @include flex-center;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            gap: 50px;
+        
+            &-up{
+                display: none;
+            }
+
+            &-left{
+                @include flex-center-column;
+                justify-content: start;
+                width: 50%;
+                height: 100%;
+                img{
+                    width: 100%;
+                    height: 350px;
+                    border-radius: 24px;
+                    object-fit: cover;
+                }
+                &-text{
+                    border-radius: 24px;
+                    box-shadow: 0 2px 2px #00000008;
+                    border: 1px solid #F5F6F8;
+                    @include flex-center-column;
+                    width: 100%;
+                    height: 45%;
+                    .text-up{
+                        @include flex-center;
+                        width: 100%;
+                        height:100px;
+                        margin: 0;
+                        padding: 0;
+                        gap: 20px;
+                        section{
+                            border-radius: 24px;
+                            border: 1px solid #F5F5F5;
+                            width: 230px;
+                            height: 112px;
+                            background-color:$color-background-card;
+                            @include font-size-bold-md-lg;
+                            font-family: $font-stack;
+                            @include flex-center-column;
+                            align-items: start;
+                            padding: 0;
+                            padding-right: 20px;
+                            margin: 0;
+                            margin-right: 10px;
+                            text-align: start;
+                            box-shadow: 0 2px 2px #00000008;
+                            :last-child{
+                            @include font-size-lighter-md;
+                            color: $font-color-gray-opacity;
+                        }                    
+                        }
+                    }
+                    .text-down{
+                        width: 100%;
+                        height:100px;
+                        @include flex-center;
+                        width: 100%;
+                        height:100px;
+                        margin: 0;
+                        margin-top: 30px;
+                        padding: 0;
+                        gap: 20px;
+                        section{
+                            border: 1px solid #F5F5F5;
+                            border-radius: 24px;
+                            width: 230px;
+                            height: 112px;
+                            background-color:$color-background-card;
+                            @include font-size-bold-md-lg;
+                            font-family: $font-stack;
+                            @include flex-center-column;
+                            align-items: start;
+                            padding: 0;
+                            padding-right: 20px;
+                            margin: 0;
+                            margin-right: 10px;
+                            text-align: start;
+                            box-shadow: 0 2px 2px #00000008;
+                            :last-child{
+                            @include font-size-lighter-md;
+                            color: $font-color-gray-opacity;
+                        }                    
+                        }
+                    }
+                }
+            }
+            &-right{
+                padding: 0;
+                margin: 0;
+                width: 40%;
+                height: 100%;
+                gap: 10px;
+                @include flex-center-column;
+                justify-content: start;
+                text-align: start;
+                align-items: start;
+                h1{
+                    margin: 0;
+                    font-family: $font-stack;
+                    @include font-size-bold-lg;
+        
+                }
+                h2{
+                    margin: 0;
+                    color: $font-color-gray-opacity;
+                    font-family: $font-stack;
+                    @include font-size-lighter-md-lg;
+        
+                }
+                p{
+                    @include font-size-lighter-sm; 
+                }
+            }
+        
+        }
+        
+        }
+        
+        
+        
+        
+        
+        ///// ------ finsh nav bar + header + main header -----////
+        
+        
+        /// finish main body-----
+        
+        
+        
+        
+        //footer scss
+        footer{
+            font-family: $font-stack;
+            margin-top: 100px;
+            width: 100%;
+            @include flex-center-column;
+            margin: 0;
+            overflow: hidden;
+            .footer-title{
+                gap: 20px;
+                @include flex-center;
+                h2{
+                    @include font-size-bold-md;
+                }
+                .footer-line{
+                    width: 350px;
+                    height:0;
+                border: 1px solid $footr-line;
+            }}
+        //--------footer main
+            .footer-main{
+            width: 100%;
+            @include flex-center;
+            &-right{
+                margin: 0;
+                width: 40%;
+                @include flex-center-column;
+                align-items: end;
+                strong{
+                    @include font-size-lighter-sm;
+                    @include flex-center;
+                    gap: 30px;
+                    i{
+                        @include font-size-bold-md;
+                    }
+                  
+                }
+                address{
+                    width: 80%;
+                    height: 100px;
+                    font-family: $font-stack;
+                    @include font-size-lighter-sm;
+                    @include flex-center;
+                    gap: 10px;
+                    img{
+                        width: 24px;
+                    }
+                  p{
+                    font-family: $font-stack;
+                  }
+                }
+            }
+            /// footer main left 
+                
+            &-left{
+                width: 45%;
+                height: 100%;
+                font-family: $font-stack;
+                @include flex-center-column;
+                align-items: start;
+                h2{
+                    @include font-size-bold-md;
+                }
+                p{
+                    @include flex-center;
+                    justify-content: start;
+                    text-align: start;
+                    align-items: start;
+                    width: 100%;
+                    @include font-size-lighter-sm;
+                }
+                .side-email{
+                    @include flex-center;
+                    position: relative;
+                    align-items: end;
+                    justify-content: end;
+                    width: 100%;
+                    .button-footer{
+                        position: relative;
+                        height: 60px;
+                        width:400px;
+                    }
+                    input{
+                        position: relative;
+                        width: 100%;
+                        height: 48px;
+                        font-family: $font-stack;
+                        padding: 5px;
+                        margin: 0;
+                        border-radius: 10px;
+                        border: 1px solid $footer-border;
+                        @include font-size-lighter-sm;
+                    }
+                    button{
+                        left: 10px;
+                        top: 8px;
+                        padding: 0;
+                        margin: 0;
+                        position: absolute;
+                        width: 80px;
+                        height: 45px;
+                        font-family: $font-stack;
+                        @include font-size-lighter-sm;
+                        color: $font-color-white;
+                        border: none;
+                        border-radius:8px;
+                        background-color: $items-color-primary;
+                    }
+                }
+            }
+        
+        
+        }
+        
+        .footer-down{
+            margin: 0;
+            margin-top: 50PX;
+            width: 100%;
+            height: 110px;
+            h3{
+                color: $font-color-gray-opacity;
+                font-family: $font-stack;
+                @include font-size-lighter-sm;
+            }
+        }
+        
+        
+        }
+
+
+    }
+
+
+
+
+
+
+
+}
