@@ -1,4 +1,3 @@
-@import url("https://v1.fontapi.ir/css/Yekan");
 @font-face {
   font-family: "Yekan";
   src: url("YekanBakh-Fat.eot");
@@ -62,6 +61,4 @@
   font-weight: 100;
   font-style: normal;
   font-display: swap;
-}
-/***********/
-/***********//*# sourceMappingURL=globalstyle.css.map */
+}/*# sourceMappingURL=font-ykan.css.map */

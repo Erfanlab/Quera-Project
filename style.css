@@ -1,4 +1,68 @@
 @import url("https://v1.fontapi.ir/css/Yekan");
+@font-face {
+  font-family: "Yekan";
+  src: url("YekanBakh-Fat.eot");
+  src: local("./YekanBakh-Fat"), url("./YekanBakh-Fat.eot") format("embedded-opentype"), url("./YekanBakh-Fat.woff2") format("woff2"), url("./YekanBakh-fat.woff") format("woff"), url("./YekanBakh-fat.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Yekanmed";
+  src: url("YekanBakh-Medium.eot");
+  src: local("./YekanBakh-Medium"), url("./YekanBakh-Medium.eot?#iefix") format("embedded-opentype"), url("./YekanBakh-Medium.woff2") format("woff2"), url("./YekanBakh-Medium.woff") format("woff"), url("./YekanBakh-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Yekan-bold";
+  src: url("./YekanBakh-Bold.eot");
+  src: local("YekanBakh-Bold"), url("./YekanBakh-Bold.eot?#iefix") format("embedded-opentype"), url("./YekanBakh-Bold.woff2") format("woff2"), url("./YekanBakh-Bold.woff") format("woff"), url("./YekanBakh-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Yekan-light";
+  src: url("./YekanBakh-Light.eot");
+  src: local("YekanBakh-Light"), url("./YekanBakh-Light.eot?#iefix") format("embedded-opentype"), url("./YekanBakh-Light.woff2") format("woff2"), url("./YekanBakh-Light.woff") format("woff"), url("./YekanBakh-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Yekan-heavy";
+  src: url("./YekanBakh-Heavy.eot");
+  src: local("YekanBakh-Heavy"), url("./YekanBakh-Heavy.eot?#iefix") format("embedded-opentype"), url("./YekanBakh-Heavy.woff2") format("woff2"), url("./YekanBakh-Heavy.woff") format("woff"), url("./YekanBakh-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Yekan-thin";
+  src: url("./YekanBakh-Thin.eot");
+  src: local("YekanBakh-Thin"), url("./YekanBakh-Thin.eot?#iefix") format("embedded-opentype"), url("./YekanBakh-Thin.woff2") format("woff2"), url("./YekanBakh-Thin.woff") format("woff"), url("./YekanBakh-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Yekan-regular";
+  src: url("./YekanBakh-Regular.eot");
+  src: local("YekanBakh-Regular"), url("./YekanBakh-Regular.eot?#iefix") format("embedded-opentype"), url("./YekanBakh-Regular.woff2") format("woff2"), url("./YekanBakh-Regular.woff") format("woff"), url("./YekanBakh-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Yekan-Bakh-Hairline";
+  src: url("./YekanBakh-Hairline.eot");
+  src: local("./YekanBakh-Hairline"), url("./YekanBakh-Hairline.eot?#iefix") format("embedded-opentype"), url("./YekanBakh-Hairline.woff2") format("woff2"), url("./YekanBakh-Hairline.woff") format("woff"), url("./YekanBakh-Hairline.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
 /***********/
 /***********/
 /*    copy code responsive 
@@ -19,6 +83,70 @@
 
 
 */
+@font-face {
+  font-family: "Yekan";
+  src: url("YekanBakh-Fat.eot");
+  src: local("./YekanBakh-Fat"), url("./YekanBakh-Fat.eot") format("embedded-opentype"), url("./YekanBakh-Fat.woff2") format("woff2"), url("./YekanBakh-fat.woff") format("woff"), url("./YekanBakh-fat.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Yekanmed";
+  src: url("YekanBakh-Medium.eot");
+  src: local("./YekanBakh-Medium"), url("./YekanBakh-Medium.eot?#iefix") format("embedded-opentype"), url("./YekanBakh-Medium.woff2") format("woff2"), url("./YekanBakh-Medium.woff") format("woff"), url("./YekanBakh-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Yekan-bold";
+  src: url("./YekanBakh-Bold.eot");
+  src: local("YekanBakh-Bold"), url("./YekanBakh-Bold.eot?#iefix") format("embedded-opentype"), url("./YekanBakh-Bold.woff2") format("woff2"), url("./YekanBakh-Bold.woff") format("woff"), url("./YekanBakh-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Yekan-light";
+  src: url("./YekanBakh-Light.eot");
+  src: local("YekanBakh-Light"), url("./YekanBakh-Light.eot?#iefix") format("embedded-opentype"), url("./YekanBakh-Light.woff2") format("woff2"), url("./YekanBakh-Light.woff") format("woff"), url("./YekanBakh-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Yekan-heavy";
+  src: url("./YekanBakh-Heavy.eot");
+  src: local("YekanBakh-Heavy"), url("./YekanBakh-Heavy.eot?#iefix") format("embedded-opentype"), url("./YekanBakh-Heavy.woff2") format("woff2"), url("./YekanBakh-Heavy.woff") format("woff"), url("./YekanBakh-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Yekan-thin";
+  src: url("./YekanBakh-Thin.eot");
+  src: local("YekanBakh-Thin"), url("./YekanBakh-Thin.eot?#iefix") format("embedded-opentype"), url("./YekanBakh-Thin.woff2") format("woff2"), url("./YekanBakh-Thin.woff") format("woff"), url("./YekanBakh-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Yekan-regular";
+  src: url("./YekanBakh-Regular.eot");
+  src: local("YekanBakh-Regular"), url("./YekanBakh-Regular.eot?#iefix") format("embedded-opentype"), url("./YekanBakh-Regular.woff2") format("woff2"), url("./YekanBakh-Regular.woff") format("woff"), url("./YekanBakh-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Yekan-Bakh-Hairline";
+  src: url("./YekanBakh-Hairline.eot");
+  src: local("./YekanBakh-Hairline"), url("./YekanBakh-Hairline.eot?#iefix") format("embedded-opentype"), url("./YekanBakh-Hairline.woff2") format("woff2"), url("./YekanBakh-Hairline.woff") format("woff"), url("./YekanBakh-Hairline.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
   box-sizing: 0;
   padding: 0;
@@ -33,16 +161,16 @@ body {
   flex-direction: column;
   padding: 0;
   margin: 0;
-  font-family: yekan, sans-serif;
-  background: linear-gradient(to bottom, #eef4ff, rgba(255, 255, 255, 0.0941176471));
+  font-family: "yekan";
 }
 @media only screen and (max-width: 768px) {
   body header {
     overflow: hidden;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     height: 500px;
     width: 100%;
     margin-bottom: 50px;
+    background: linear-gradient(to bottom, #eef4ff, rgba(255, 255, 255, 0.0941176471));
   }
   body header .nav-bar {
     z-index: 2;
@@ -87,7 +215,7 @@ body {
     height: 40px;
     border: 0 solid;
     border-radius: 6px;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     font-size: 16px;
     font-weight: lighter;
     color: #ffffff;
@@ -125,7 +253,7 @@ body {
     text-align: center;
     align-items: center;
     flex-direction: column;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     gap: 10px;
     position: absolute;
     border-radius: 8px;
@@ -202,7 +330,7 @@ body {
     display: none;
     justify-content: start;
     list-style: none;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     margin: 0;
     padding: 0;
   }
@@ -423,7 +551,7 @@ body {
   body header .header-main .header-down .header-button button {
     cursor: pointer;
     border: 0;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     display: flex;
     justify-content: center;
     text-align: center;
@@ -438,7 +566,7 @@ body {
     color: #ffffff;
   }
   body main {
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     margin-top: 60px;
     width: 100%;
     display: flex;
@@ -539,7 +667,7 @@ body {
     flex-direction: column;
   }
   body main .main-slid2 .main-slid2-card .main-slid2-card .main-card-text h3 {
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     font-size: 15px;
     font-weight: bold;
   }
@@ -566,7 +694,7 @@ body {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
   }
   body main .main-slid3 .main-slid3-text strong {
     margin: 0;
@@ -599,7 +727,7 @@ body {
     background-color: rgba(255, 255, 255, 0.0941176471);
     height: 50px;
     width: 50%;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     font-size: 12px;
     font-weight: bolder;
     color: #2b7ef8;
@@ -637,7 +765,7 @@ body {
     text-align: center;
     align-items: center;
     flex-direction: column;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     width: 100%;
   }
   body main .main-slid4-title h2 {
@@ -680,7 +808,7 @@ body {
     position: relative;
     overflow-x: scroll;
     overflow-y: hidden;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     display: flex;
     justify-content: center;
     text-align: center;
@@ -761,7 +889,7 @@ body {
     align-items: start;
   }
   body main .main-slid4-allCard .slid4-left-card-txt h3 {
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     margin: 0;
     font-size: 14px;
   }
@@ -773,7 +901,7 @@ body {
     font-weight: lighter;
   }
   body footer {
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     margin-top: 100px;
     width: 90%;
     height: 800px;
@@ -860,7 +988,7 @@ body {
     border-radius: 16px;
     width: 40%;
     height: 80%;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     font-size: 12px;
     font-weight: lighter;
     display: flex;
@@ -875,12 +1003,12 @@ body {
     font-weight: bolder;
   }
   body footer .footer-main-right address p {
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
   }
   body footer .footer-main-left {
     width: 100%;
     height: 30%;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     display: flex;
     justify-content: center;
     text-align: center;
@@ -925,7 +1053,7 @@ body {
     overflow: hidden;
     width: 280px;
     height: 48px;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     padding: 5px;
     padding-right: 20px;
     display: flex;
@@ -948,7 +1076,7 @@ body {
     position: absolute;
     width: 80px;
     height: 45px;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     font-size: 16px;
     font-weight: lighter;
     color: #ffffff;
@@ -965,7 +1093,7 @@ body {
   }
   body footer .footer-down h3 {
     color: #666666;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     font-size: 12px;
     font-weight: lighter;
   }
@@ -973,10 +1101,11 @@ body {
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   body header {
     overflow: hidden;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     height: 500px;
     width: 100%;
     margin-bottom: 50px;
+    background: linear-gradient(to bottom, #eef4ff, rgba(255, 255, 255, 0.0941176471));
   }
   body header .nav-bar {
     z-index: 2;
@@ -1021,7 +1150,7 @@ body {
     height: 40px;
     border: 0 solid;
     border-radius: 6px;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     font-size: 16px;
     font-weight: lighter;
     color: #ffffff;
@@ -1058,7 +1187,7 @@ body {
     text-align: center;
     align-items: center;
     flex-direction: column;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     gap: 10px;
     position: absolute;
     border-radius: 8px;
@@ -1135,7 +1264,7 @@ body {
     display: none;
     justify-content: start;
     list-style: none;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     margin: 0;
     padding: 0;
   }
@@ -1358,7 +1487,7 @@ body {
   body header .header-main .header-down .header-button button {
     cursor: pointer;
     border: 0;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     display: flex;
     justify-content: center;
     text-align: center;
@@ -1373,7 +1502,7 @@ body {
     color: #ffffff;
   }
   body main {
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     margin-top: 60px;
     width: 100%;
     display: flex;
@@ -1476,7 +1605,7 @@ body {
   }
   body main .main-slid2 .main-slid2-card .main-slid2-card .main-card-text h3 {
     width: 100%;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     font-size: 12px;
     font-weight: bold;
   }
@@ -1505,7 +1634,7 @@ body {
     align-items: center;
     flex-direction: column;
     width: 50%;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
   }
   body main .main-slid3 .main-slid3-text strong {
     margin: 0;
@@ -1539,7 +1668,7 @@ body {
     background-color: rgba(255, 255, 255, 0.0941176471);
     height: 50px;
     width: 50%;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     font-size: 12px;
     font-weight: bolder;
     color: #2b7ef8;
@@ -1577,7 +1706,7 @@ body {
     text-align: center;
     align-items: center;
     flex-direction: column;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     width: 100%;
   }
   body main .main-slid4-title h2 {
@@ -1620,7 +1749,7 @@ body {
     position: relative;
     overflow-x: scroll;
     overflow-y: hidden;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     display: flex;
     justify-content: center;
     text-align: center;
@@ -1701,7 +1830,7 @@ body {
     align-items: start;
   }
   body main .main-slid4-allCard .slid4-left-card-txt h3 {
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     margin: 0;
     font-size: 14px;
   }
@@ -1713,7 +1842,7 @@ body {
     font-weight: lighter;
   }
   body footer {
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     margin-top: 100px;
     width: 100%;
     display: flex;
@@ -1776,7 +1905,7 @@ body {
   body footer .footer-main-right address {
     width: 60%;
     height: 100px;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     font-size: 16px;
     font-weight: lighter;
     display: flex;
@@ -1789,12 +1918,12 @@ body {
     width: 24px;
   }
   body footer .footer-main-right address p {
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
   }
   body footer .footer-main-left {
     width: 40%;
     height: 100%;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     display: flex;
     justify-content: center;
     text-align: center;
@@ -1838,7 +1967,7 @@ body {
   body footer .footer-main-left .side-email input {
     width: 100%;
     height: 48px;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     padding: 5px;
     margin: 0;
     border-radius: 10px;
@@ -1854,7 +1983,7 @@ body {
     position: absolute;
     width: 80px;
     height: 45px;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     font-size: 16px;
     font-weight: lighter;
     color: #ffffff;
@@ -1870,7 +1999,7 @@ body {
   }
   body footer .footer-down h3 {
     color: #666666;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     font-size: 16px;
     font-weight: lighter;
   }
@@ -1878,10 +2007,11 @@ body {
 @media only screen and (min-width: 1025px) and (max-width: 1279px) {
   body header {
     overflow: hidden;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     height: 500px;
     width: 100%;
     margin-bottom: 50px;
+    background: linear-gradient(to bottom, #eef4ff, rgba(255, 255, 255, 0.0941176471));
   }
   body header .nav-bar {
     z-index: 2;
@@ -1928,7 +2058,7 @@ body {
     height: 40px;
     border: 0 solid;
     border-radius: 6px;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     font-size: 16px;
     font-weight: lighter;
     color: #ffffff;
@@ -1966,7 +2096,7 @@ body {
     text-align: center;
     align-items: center;
     flex-direction: column;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     gap: 10px;
     position: absolute;
     border-radius: 8px;
@@ -2046,7 +2176,7 @@ body {
     flex-direction: row;
     justify-content: start;
     list-style: none;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     margin: 0;
     padding: 0;
   }
@@ -2260,7 +2390,7 @@ body {
   body header .header-main .header-down .header-button button {
     cursor: pointer;
     border: 0;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     display: flex;
     justify-content: center;
     text-align: center;
@@ -2275,7 +2405,7 @@ body {
     color: #ffffff;
   }
   body main {
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     margin-top: 150px;
     width: 85%;
     display: flex;
@@ -2397,7 +2527,7 @@ body {
     flex-direction: column;
     text-align: start;
     width: 60%;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
   }
   body main .main-slid3 .main-slid3-text strong {
     margin: 0;
@@ -2422,7 +2552,7 @@ body {
     background-color: rgba(255, 255, 255, 0.0941176471);
     height: 100px;
     width: 80%;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     font-size: 20px;
     font-weight: bolder;
     color: #2b7ef8;
@@ -2460,7 +2590,7 @@ body {
     text-align: center;
     align-items: center;
     flex-direction: column;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     width: 100%;
   }
   body main .main-slid4-title h2 {
@@ -2501,7 +2631,7 @@ body {
   }
   body main .main-slid4-allCard {
     overflow: hidden;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     display: flex;
     justify-content: center;
     text-align: center;
@@ -2576,7 +2706,7 @@ body {
     font-weight: lighter;
   }
   body footer {
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     margin-top: 100px;
     width: 100%;
     display: flex;
@@ -2639,7 +2769,7 @@ body {
   body footer .footer-main-right address {
     width: 80%;
     height: 100px;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     font-size: 16px;
     font-weight: lighter;
     display: flex;
@@ -2653,12 +2783,12 @@ body {
     width: 24px;
   }
   body footer .footer-main-right address p {
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
   }
   body footer .footer-main-left {
     width: 45%;
     height: 100%;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     display: flex;
     justify-content: center;
     text-align: center;
@@ -2703,7 +2833,7 @@ body {
     position: relative;
     width: 100%;
     height: 48px;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     padding: 5px;
     margin: 0;
     border-radius: 10px;
@@ -2719,7 +2849,7 @@ body {
     position: absolute;
     width: 80px;
     height: 45px;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     font-size: 16px;
     font-weight: lighter;
     color: #ffffff;
@@ -2735,7 +2865,7 @@ body {
   }
   body footer .footer-down h3 {
     color: #666666;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     font-size: 16px;
     font-weight: lighter;
   }
@@ -2743,17 +2873,18 @@ body {
 @media only screen and (min-width: 1279px) {
   body header {
     overflow: hidden;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     height: 500px;
     width: 100%;
     margin-bottom: 50px;
+    background: linear-gradient(to bottom, #eef4ff, rgba(255, 255, 255, 0.0941176471));
   }
   body header .nav-bar {
     z-index: 2;
     position: fixed;
     margin: 0;
     padding: 0;
-    height: 13%;
+    height: 10%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -2793,7 +2924,7 @@ body {
     height: 40px;
     border: 0 solid;
     border-radius: 6px;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     font-size: 16px;
     font-weight: lighter;
     color: #ffffff;
@@ -2831,7 +2962,7 @@ body {
     text-align: center;
     align-items: center;
     flex-direction: column;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     gap: 10px;
     position: absolute;
     border-radius: 8px;
@@ -2911,7 +3042,7 @@ body {
     flex-direction: row;
     justify-content: start;
     list-style: none;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     margin: 0;
     padding: 0;
   }
@@ -2938,8 +3069,8 @@ body {
     position: absolute;
     overflow: hidden;
     width: 100%;
-    height: 600px;
-    margin-top: 85px;
+    height: 650px;
+    margin-top: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2952,16 +3083,16 @@ body {
     flex-direction: row;
     margin: 0;
     width: 99%;
-    height: 100%;
+    height: 70%;
   }
   body header .header-main .main-up .header-main-text {
     overflow: hidden;
     position: absolute;
     width: 100%;
-    height: 90%;
+    height: 70%;
     margin: 0;
     gap: 5px;
-    margin-top: 60px;
+    margin-top: 10px;
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -2985,7 +3116,7 @@ body {
     height: 15%;
     width: 100%;
     margin: 0;
-    margin-top: 300px;
+    margin-top: 350px;
     display: flex;
     display: flex;
     justify-content: center;
@@ -3001,12 +3132,12 @@ body {
     justify-content: center;
     margin: 0;
     padding: 0;
-    width: 60%;
+    width: 51%;
     font-size: 16px;
     font-weight: lighter;
   }
   body header .header-main .main-up .header-main-text .line-head {
-    position: absolute;
+    position: relative;
     overflow: hidden;
     display: flex;
     flex-direction: row;
@@ -3017,10 +3148,8 @@ body {
     flex-direction: row;
     margin: 0;
     width: 100%;
-    height: 100%;
-  }
-  body header .header-main .main-up .header-main-text .line-head img {
-    width: 350px;
+    height: 10%;
+    bottom: 50px;
   }
   body header .header-main .main-up .allstars {
     overflow: hidden;
@@ -3035,7 +3164,7 @@ body {
     flex-direction: row;
     flex-direction: row;
     position: absolute;
-    gap: 60%;
+    gap: 40%;
     margin: 0;
     padding: 0;
   }
@@ -3045,59 +3174,35 @@ body {
     margin: 0;
     padding: 0;
     width: 5%;
-    margin-bottom: 350px;
-  }
-  body header .header-main .main-up .allstars .star1 i {
-    color: #2b7ef8;
-    font-size: 40px;
+    margin-bottom: 400px;
   }
   body header .header-main .main-up .allstars .star2 {
     overflow: hidden;
     width: 5%;
-    margin-top: 100px;
-  }
-  body header .header-main .main-up .allstars .star2 i {
-    color: #2b7ef8;
-    font-size: 40px;
+    margin-top: 10px;
+    margin-right: 300px;
   }
   body header .header-main .main-up .circle-right {
     overflow: hidden;
     z-index: 0;
-    width: 700px;
-    height: 90%;
+    width: 452px;
+    height: 452px;
     margin: 0;
     padding: 0;
-    margin-left: 50px;
-    margin-top: 8px;
-  }
-  body header .header-main .main-up .circle-right i {
-    margin: 0;
-    background: linear-gradient(#E0EDFF, rgba(239, 235, 255, 0));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 500px;
-    opacity: 100%;
+    margin-right: 250px;
+    margin-top: 50px;
   }
   body header .header-main .main-up .circle-left {
     overflow: hidden;
     z-index: 0;
-    width: 700px;
-    height: 100%;
+    width: 452px;
+    height: 452px;
     margin: 0;
     margin-left: 300px;
     margin-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: start;
-  }
-  body header .header-main .main-up .circle-left i {
-    background: linear-gradient(#E0EDFF, rgba(239, 235, 255, 0));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 500px;
-    opacity: 100%;
   }
   body header .header-main .header-down {
     overflow: hidden;
@@ -3119,10 +3224,14 @@ body {
     flex-direction: row;
     gap: 30px;
   }
+  body header .header-main .header-down .header-button :nth-child(2) {
+    color: #2b7ef8;
+    background-color: #EBF3FE;
+  }
   body header .header-main .header-down .header-button button {
     cursor: pointer;
     border: 0;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     display: flex;
     justify-content: center;
     text-align: center;
@@ -3137,7 +3246,7 @@ body {
     color: #ffffff;
   }
   body main {
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     margin-top: 150px;
     width: 85%;
     display: flex;
@@ -3180,6 +3289,8 @@ body {
   body main .main-slid2 .main-slid2-title h2 {
     font-size: 46px;
     font-weight: lighter;
+    font-weight: 600;
+    font-size: 40px;
   }
   body main .main-slid2 .main-slid2-title div {
     width: 100%;
@@ -3191,8 +3302,9 @@ body {
     flex-direction: row;
   }
   body main .main-slid2 .main-slid2-title div p {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: lighter;
+    font-size: 18px;
     width: 50%;
   }
   body main .main-slid2 .main-slid2-card {
@@ -3207,7 +3319,8 @@ body {
     flex-direction: row;
   }
   body main .main-slid2 .main-slid2-card .main-slid2-card {
-    box-shadow: 0 4px 1px rgba(0, 0, 0, 0.031372549);
+    border: 1px solid #F5F6F8;
+    box-shadow: 0 1px 5px #F5F6F8;
     border-radius: 24px;
     background-color: white;
     width: 100%;
@@ -3247,15 +3360,16 @@ body {
     text-align: center;
     align-items: center;
     flex-direction: row;
+    margin-top: 150px;
     width: 90%;
-    gap: 20px;
+    gap: 50px;
   }
   body main .main-slid3 .main-slid3-text {
     display: flex;
     flex-direction: column;
     text-align: start;
-    width: 60%;
-    font-family: yekan, sans-serif;
+    width: 50%;
+    font-family: "yekan";
   }
   body main .main-slid3 .main-slid3-text strong {
     margin: 0;
@@ -3276,21 +3390,28 @@ body {
     font-weight: bolder;
   }
   body main .main-slid3 .main-slid3-text button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: start;
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.0941176471);
-    height: 100px;
-    width: 50%;
-    font-family: yekan, sans-serif;
+    height: 50px;
+    width: 80%;
+    font-family: "yekan";
     font-size: 20px;
     font-weight: bolder;
     color: #2b7ef8;
     border: none;
   }
-  body main .main-slid3 .main-slid3-text button i {
+  body main .main-slid3 .main-slid3-text button svg {
+    cursor: pointer;
     font-size: 20px;
     font-weight: bolder;
-    width: 10px;
-    margin-right: 10px;
+    height: 50%;
+    width: 30px;
   }
   body main .main-slid3 .main-slid3-image-up {
     display: none;
@@ -3318,7 +3439,7 @@ body {
     text-align: center;
     align-items: center;
     flex-direction: column;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     width: 100%;
   }
   body main .main-slid4-title h2 {
@@ -3356,8 +3477,9 @@ body {
     font-weight: lighter;
   }
   body main .main-slid4-allCard {
+    z-index: 1;
     overflow: hidden;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     display: flex;
     justify-content: center;
     text-align: center;
@@ -3429,8 +3551,22 @@ body {
     font-size: 16px;
     font-weight: lighter;
   }
+  body main .main-slid4 .circle-end {
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: start;
+    left: 600px;
+  }
   body footer {
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     margin-top: 100px;
     width: 100%;
     display: flex;
@@ -3493,7 +3629,7 @@ body {
   body footer .footer-main-right address {
     width: 60%;
     height: 100px;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     font-size: 16px;
     font-weight: lighter;
     display: flex;
@@ -3506,12 +3642,12 @@ body {
     width: 24px;
   }
   body footer .footer-main-right address p {
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
   }
   body footer .footer-main-left {
     width: 30%;
     height: 100%;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     display: flex;
     justify-content: center;
     text-align: center;
@@ -3556,7 +3692,7 @@ body {
     position: relative;
     width: 350px;
     height: 48px;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     padding: 5px;
     margin: 0;
     border-radius: 10px;
@@ -3572,7 +3708,7 @@ body {
     position: absolute;
     width: 80px;
     height: 45px;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     font-size: 16px;
     font-weight: lighter;
     color: #ffffff;
@@ -3588,7 +3724,7 @@ body {
   }
   body footer .footer-down h3 {
     color: #666666;
-    font-family: yekan, sans-serif;
+    font-family: "yekan";
     font-size: 16px;
     font-weight: lighter;
   }

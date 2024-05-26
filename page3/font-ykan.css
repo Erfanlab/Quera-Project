@@ -1,4 +1,3 @@
-@import url("https://v1.fontapi.ir/css/Yekan");
 @font-face {
   font-family: "Yekan";
   src: url("YekanBakh-Fat.eot");
@@ -8,7 +7,7 @@
   font-display: swap;
 }
 @font-face {
-  font-family: "Yekanmed";
+  font-family: "Yekan-med";
   src: url("YekanBakh-Medium.eot");
   src: local("./YekanBakh-Medium"), url("./YekanBakh-Medium.eot?#iefix") format("embedded-opentype"), url("./YekanBakh-Medium.woff2") format("woff2"), url("./YekanBakh-Medium.woff") format("woff"), url("./YekanBakh-Medium.ttf") format("truetype");
   font-weight: 500;
@@ -62,6 +61,4 @@
   font-weight: 100;
   font-style: normal;
   font-display: swap;
-}
-/***********/
-/***********//*# sourceMappingURL=globalstyle.css.map */
+}/*# sourceMappingURL=font-ykan.css.map */

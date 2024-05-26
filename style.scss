@@ -1,6 +1,8 @@
 @import './globalstyle.scss';
 @import './globalcolor.scss';
 @import './responsive-page1.scss';
+@import './assets/fonts/yekan-bakh/font-ykan.scss';
+
 
 :root{
     box-sizing: 0;
@@ -14,9 +16,8 @@ body{
     padding: 0;
     margin: 0;
     font-family: $font-stack;
-    background: linear-gradient(to bottom, $main-color-background,$second-color-background);
     
-/////////////////phone  480////////////
+/////////////////phone  480
     @media only screen and (max-width:$size-smartphone) {
             header{
                 overflow: hidden;
@@ -24,6 +25,7 @@ body{
                 height: 500px;
                 width: 100%;
                 margin-bottom: 50px;
+                background: linear-gradient(to bottom, $main-color-background,$second-color-background);
                 .nav-bar{
                     z-index: 2;
                     position: fixed;
@@ -855,8 +857,7 @@ body{
             }
             
     
-              
-        }
+              }
     
     
 /////////////////tablet 481-768///////    
@@ -867,6 +868,8 @@ body{
             height: 500px;
             width: 100%;
             margin-bottom: 50px;
+                background: linear-gradient(to bottom, $main-color-background,$second-color-background);
+
             .nav-bar{
                 z-index: 2;
                 position: fixed;
@@ -1690,6 +1693,8 @@ body{
             height: 500px;
             width: 100%;
             margin-bottom: 50px;
+                background: linear-gradient(to bottom, $main-color-background,$second-color-background);
+
             .nav-bar{
                 z-index: 2;
                 position: fixed;
@@ -2467,12 +2472,13 @@ body{
             height: 500px;
             width: 100%;
             margin-bottom: 50px;
+            background: linear-gradient(to bottom, $main-color-background,$second-color-background);
             .nav-bar{
                 z-index: 2;
                 position: fixed;
                 margin: 0;
                 padding: 0;
-                height: 13%;
+                height: 10%;
                 width: 100%;
                 @include flex-center;
                 background-color:$primary-background-color;
@@ -2586,11 +2592,7 @@ body{
                        display:none;
                         @include font-size-bold-md-lg;
                      }
-                 
-               
-              
                  strong{
-        
                     width: 20%;
                     @include font-size-bold-md;
                  }
@@ -2627,12 +2629,12 @@ body{
             ///finish nav bar 
             }
             .header-main{
-                overflow: hidden;
+            overflow: hidden;
             position: absolute;
             overflow: hidden;
             width: 100%;
-            height: 600px;
-            margin-top: 85px;
+            height: 650px;
+            margin-top: 100px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -2645,16 +2647,16 @@ body{
                 flex-direction: row;
                 margin:0;
                 width: 99%;
-                height: 100%;
+                height: 70%;
         
             .header-main-text{
                 overflow: hidden;
                 position: absolute;
                 width: 100%;
-                height: 90%;
+                height: 70%;
                 margin:0;
                 gap: 5px;
-                margin-top: 60px;
+                margin-top: 10px;
                 z-index: 1;
                 display: flex;
                 flex-direction: column;
@@ -2675,124 +2677,85 @@ body{
                 height: 15%;
                 width: 100%;
                 margin: 0;
-                margin-top:300px;
+                margin-top:350px;
                 display: flex;
                 @include flex-center;
                 position: absolute;
         
                 p{
-                    
                     display: flex;
                     text-align: center;
                     align-items: center;
                     justify-content: center;
                     margin: 0;
                     padding: 0;
-                    width: 60%;
+                    width: 51%;
                     @include font-size-lighter-sm;
-                
                 }
             }
             .line-head{
-                position: absolute;
+                position: relative;
                 overflow: hidden;
                 display: flex;
                 flex-direction: row;
                 @include flex-center;
                 margin: 0;
                 width: 100%;
-                height: 100%;
-                img{
-                    width: 350px;
-                }
+                height: 10%;
+                bottom: 50px;
             }
-            
-        
-        
-            }
-            
-        
+        }
         .allstars{
             overflow: hidden;
             z-index: 0;
             width: 100%;
-            height: 100%;
+            height:100%;
             display:flex;
             @include flex-center;
             flex-direction: row;
             position: absolute;
-            gap: 60%;
+            gap: 40%;
             margin: 0;
             padding: 0;
             
-            .star1{    overflow: hidden;
-        
+            .star1{    
+                overflow: hidden;
                 position: relative;
                 margin: 0;
                 padding: 0;
-            width: 5%;
-            margin-bottom: 350px;
-            i{
-                color: $items-color-primary;
-                font-size: 40px;
-            }
-        
-            }
-            .star2{    overflow: hidden;
-        
                 width: 5%;
-                margin-top: 100px;
-                i{
-        
-                    color: $items-color-primary;
-                    font-size: 40px;
-                }
+                margin-bottom: 400px;
             }
-            
-        
-        
+            .star2{    
+                overflow: hidden;
+                width: 5%;
+                margin-top: 10px;
+                margin-right: 300px;
+            }
         }
-        
             .circle-right{
                 overflow: hidden;
                 z-index: 0;
-                width: 700px;
-                height: 90%;
+                width: 452px;
+                height: 452px;
                 margin: 0;
                 padding: 0;
-                margin-left: 50px;
-                margin-top: 8px;
-                i{
-                    margin: 0;
-                    background: linear-gradient($main-color-border,$second-color-border);
-                    -webkit-background-clip: text;
-                            background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    font-size: 500px;
-                    opacity: 100%;
-                }
+                margin-right: 250px;
+                margin-top: 50px;
+               
         
             }
             .circle-left{
                 overflow: hidden;
                 z-index: 0;
-                width: 700px;
-                height: 100%;
+                width: 452px;
+                height: 452px;
                 margin: 0;
                 margin-left: 300px;
                 margin-top: 100px;
                 display: flex;
                 flex-direction: column;
                 justify-content: start;
-        
-                i{
-                    background: linear-gradient($main-color-border,$second-color-border);
-                    -webkit-background-clip: text;
-                            background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    font-size: 500px;
-                    opacity: 100%;
-                }
         
             }
         
@@ -2811,6 +2774,10 @@ body{
                 @include flex-center;
                 flex-direction: row;
                 gap: 30px;
+                :nth-child(2){
+                    color: $items-color-primary;
+                    background-color: #EBF3FE;
+                }
                 button{
                     cursor: pointer;
                     border: 0;
@@ -2822,23 +2789,8 @@ body{
                     border-radius: 6px;
                     background-color: $items-color-primary;
                     color: $font-color-white;
-                
-               
-               
-               
-                }
-            
-            
-            }
-        }
-        
-        
-        }
-            
-        }
-        
+                }}}}}
         ///// ------ finsh nav bar + header + main header -----////
-        
         //main scss
         main{
             font-family: $font-stack;
@@ -2847,12 +2799,9 @@ body{
             @include flex-center-column;
             overflow: hidden;
             gap: 50px;
-        
-        .main-slid1{    overflow: hidden;
-        
+        .main-slid1{   
+            overflow: hidden;
             width: 100%;
-        
-        
             img{
                 height: auto;
                 width: 85%;
@@ -2873,20 +2822,18 @@ body{
                 padding: 0;
                 h2{
                     @include font-size-lighter-lg;
-        
+                    font-weight: 600;
+                    font-size: 40px;
                 }
                 div{
                     width: 100%;
                     height: 10px;
                     @include flex-center;
                     p{
-                        @include font-size-lighter-sm;
+                        @include font-size-lighter-md;
+                        font-size: 18px;
                         width: 50%;
-            
-                    }
-                }
-               
-            }
+                    }}}
             .main-slid2-card{
                 overflow: hidden;
                 gap: 50px;
@@ -2895,7 +2842,8 @@ body{
                 @include flex-center;
                 ///cards ///
                 .main-slid2-card{
-                    box-shadow: 0 4px 1px #00000008;
+                border: 1px solid #F5F6F8;
+                    box-shadow: 0 1px 5px #F5F6F8;
                     border-radius: 24px;
                     background-color: $primary-background-color;
         
@@ -2930,14 +2878,15 @@ body{
             position: relative;
             overflow: hidden;
             @include flex-center;
+            margin-top: 150px;
             width: 90%;
-            gap: 20px;
+            gap: 50px;
         
         .main-slid3-text{
             display: flex;
             flex-direction: column;
             text-align: start;
-            width: 60%;
+            width: 50%;
             font-family: $font-stack;
             strong{
                 margin: 0;
@@ -2955,18 +2904,21 @@ body{
                 @include font-size-bold-lg;
             }
             button{
+                @include flex-center;
+                justify-content: start;
                 cursor: pointer;
                 background-color: $second-color-background;
-                height: 100px;
-                width: 50%;
+                height: 50px;
+                width: 80%;
                 font-family: $font-stack;
                 @include font-size-bold-md;
                 color: $items-color-primary;
                 border: none;
-                i{
+                svg{
+                    cursor: pointer;
                     @include font-size-bold-md;
-                    width: 10px;
-                    margin-right: 10px;
+                    height: 50%;
+                    width: 30px;
                 }
             }
         }
@@ -3031,6 +2983,7 @@ body{
             }
         /////-----------cars slid4---------/////
             &-allCard{
+                z-index: 1;
                 overflow: hidden;
                 font-family: $font-stack;
                 @include flex-center;
@@ -3086,6 +3039,18 @@ body{
                     }
                 }
         
+            }
+            .circle-end{               
+                overflow: hidden;
+                position: absolute;
+                z-index: 0;
+                width: 50%;
+                height: 50%;
+                @include flex-center;
+                justify-content: start;
+                left: 600px;
+
+                
             }
         // finish slid 4
         }
