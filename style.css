@@ -546,7 +546,7 @@ body {
   }
   body header .header-main .header-down .header-button :nth-child(2) {
     color: #2b7ef8;
-    background-color: #EBF3FE;
+    background-color: #ebf3fe;
   }
   body header .header-main .header-down .header-button button {
     cursor: pointer;
@@ -654,7 +654,7 @@ body {
   }
   body main .main-slid2 .main-slid2-card .main-slid2-card img {
     width: 25px;
-    background-color: #F5FBFF;
+    background-color: #f5fbff;
     border-radius: 10px;
   }
   body main .main-slid2 .main-slid2-card .main-slid2-card .main-card-text {
@@ -1087,7 +1087,7 @@ body {
   body footer .footer-down {
     overflow: hidden;
     margin: 0;
-    margin-top: 5PX;
+    margin-top: 5px;
     width: 100%;
     height: 10%;
   }
@@ -1482,7 +1482,7 @@ body {
   }
   body header .header-main .header-down .header-button :nth-child(2) {
     color: #2b7ef8;
-    background-color: #EBF3FE;
+    background-color: #ebf3fe;
   }
   body header .header-main .header-down .header-button button {
     cursor: pointer;
@@ -1591,7 +1591,7 @@ body {
   }
   body main .main-slid2 .main-slid2-card .main-slid2-card img {
     width: 25px;
-    background-color: #F5FBFF;
+    background-color: #f5fbff;
     border-radius: 10px;
   }
   body main .main-slid2 .main-slid2-card .main-slid2-card .main-card-text {
@@ -1993,7 +1993,7 @@ body {
   }
   body footer .footer-down {
     margin: 0;
-    margin-top: 50PX;
+    margin-top: 50px;
     width: 100%;
     height: 110px;
   }
@@ -2385,7 +2385,7 @@ body {
   }
   body header .header-main .header-down .header-button :nth-child(2) {
     color: #2b7ef8;
-    background-color: #EBF3FE;
+    background-color: #ebf3fe;
   }
   body header .header-main .header-down .header-button button {
     cursor: pointer;
@@ -2859,7 +2859,7 @@ body {
   }
   body footer .footer-down {
     margin: 0;
-    margin-top: 50PX;
+    margin-top: 50px;
     width: 100%;
     height: 110px;
   }
@@ -2940,7 +2940,7 @@ body {
     align-items: center;
     flex-direction: row;
     background-color: white;
-    border: 1px solid #E0EDFF;
+    border: 1px solid #A1A1A1;
     border-radius: 6px;
   }
   body header .nav-bar .nav-bar-main .nav-bar-left .close {
@@ -2962,6 +2962,8 @@ body {
     text-align: center;
     align-items: center;
     flex-direction: column;
+    align-items: start;
+    text-align: start;
     font-family: "yekan";
     gap: 10px;
     position: absolute;
@@ -2970,7 +2972,7 @@ body {
     border: 1px solid #EBEDEF;
     margin: 0;
     margin-top: 250px;
-    margin-left: 200px;
+    margin-left: 0;
     width: 250px;
     height: 180px;
   }
@@ -3226,7 +3228,7 @@ body {
   }
   body header .header-main .header-down .header-button :nth-child(2) {
     color: #2b7ef8;
-    background-color: #EBF3FE;
+    background-color: #ebf3fe;
   }
   body header .header-main .header-down .header-button button {
     cursor: pointer;
@@ -3287,9 +3289,7 @@ body {
     padding: 0;
   }
   body main .main-slid2 .main-slid2-title h2 {
-    font-size: 46px;
-    font-weight: lighter;
-    font-weight: 600;
+    font-weight: 300;
     font-size: 40px;
   }
   body main .main-slid2 .main-slid2-title div {
@@ -3311,7 +3311,7 @@ body {
     overflow: hidden;
     gap: 50px;
     margin: 0;
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -3319,10 +3319,11 @@ body {
     flex-direction: row;
   }
   body main .main-slid2 .main-slid2-card .main-slid2-card {
-    border: 1px solid #F5F6F8;
-    box-shadow: 0 1px 5px #F5F6F8;
+    border: 1px solid #f5f6f8;
+    box-shadow: 0 1px 5px #f5f6f8;
     border-radius: 24px;
     background-color: white;
+    height: 300px;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -3563,7 +3564,8 @@ body {
     align-items: center;
     flex-direction: row;
     justify-content: start;
-    left: 600px;
+    left: 1000px;
+    margin-bottom: 200px;
   }
   body footer {
     font-family: "yekan";
@@ -3620,16 +3622,11 @@ body {
     text-align: center;
     align-items: center;
     flex-direction: row;
+    justify-content: start;
     gap: 20px;
   }
-  body footer .footer-main-right strong i {
-    font-size: 20px;
-    font-weight: bolder;
-  }
   body footer .footer-main-right address {
-    width: 60%;
-    height: 100px;
-    font-family: "yekan";
+    width: 61%;
     font-size: 16px;
     font-weight: lighter;
     display: flex;
@@ -3637,22 +3634,22 @@ body {
     text-align: center;
     align-items: center;
     flex-direction: row;
-  }
-  body footer .footer-main-right address img {
-    width: 24px;
+    justify-content: start;
+    gap: 20px;
   }
   body footer .footer-main-right address p {
-    font-family: "yekan";
+    font-size: 14px;
   }
   body footer .footer-main-left {
     width: 30%;
-    height: 100%;
+    height: 335px;
     font-family: "yekan";
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
     flex-direction: column;
+    text-align: start;
     align-items: start;
   }
   body footer .footer-main-left h2 {
@@ -3672,6 +3669,14 @@ body {
     font-size: 16px;
     font-weight: lighter;
   }
+  body footer .footer-main-left form {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    width: 95%;
+  }
   body footer .footer-main-left .side-email {
     display: flex;
     justify-content: center;
@@ -3679,8 +3684,8 @@ body {
     align-items: center;
     flex-direction: row;
     position: relative;
-    align-items: end;
-    justify-content: end;
+    align-items: start;
+    justify-content: start;
     width: 100%;
   }
   body footer .footer-main-left .side-email .button-footer {
@@ -3690,10 +3695,10 @@ body {
   }
   body footer .footer-main-left .side-email input {
     position: relative;
-    width: 350px;
+    width: 100%;
     height: 48px;
     font-family: "yekan";
-    padding: 5px;
+    padding: 5px 20px;
     margin: 0;
     border-radius: 10px;
     border: 1px solid #A1A1A1;
@@ -3718,9 +3723,9 @@ body {
   }
   body footer .footer-down {
     margin: 0;
-    margin-top: 50PX;
+    margin-top: 50px;
     width: 100%;
-    height: 110px;
+    height: 80px;
   }
   body footer .footer-down h3 {
     color: #666666;
