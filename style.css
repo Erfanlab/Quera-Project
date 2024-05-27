@@ -167,9 +167,8 @@ body {
   body header {
     overflow: hidden;
     font-family: "yekan";
-    height: 500px;
+    height: 450px;
     width: 100%;
-    margin-bottom: 50px;
     background: linear-gradient(to bottom, #eef4ff, rgba(255, 255, 255, 0.0941176471));
   }
   body header .nav-bar {
@@ -177,7 +176,7 @@ body {
     position: fixed;
     margin: 0;
     padding: 0;
-    height: 13%;
+    height: 11%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -312,6 +311,10 @@ body {
     align-items: center;
     flex-direction: row;
   }
+  body header .nav-bar .nav-bar-main .nav-bar-right svg {
+    width: 24px;
+    height: 24px;
+  }
   body header .nav-bar .nav-bar-main .nav-bar-right .menubar {
     margin: 0;
     font-size: 32px;
@@ -320,7 +323,7 @@ body {
   body header .nav-bar .nav-bar-main .nav-bar-right strong {
     margin: 0;
     width: 100%;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bolder;
   }
   body header .nav-bar .nav-bar-main .nav-bar-right .nav-bar-ul {
@@ -357,7 +360,7 @@ body {
     position: absolute;
     overflow: hidden;
     width: 100%;
-    height: 700px;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -387,16 +390,16 @@ body {
   }
   body header .header-main .main-up .header-main-text h2 {
     margin: 0;
-    margin-top: 100px;
+    margin-top: 50px;
     position: relative;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: lighter;
   }
   body header .header-main .main-up .header-main-text h1 {
     margin: 0;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
     position: relative;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: bolder;
   }
   body header .header-main .main-up .header-main-text .text-button {
@@ -404,7 +407,7 @@ body {
     height: 15%;
     width: 100%;
     margin: 0;
-    margin-top: 300px;
+    margin-top: 200px;
     display: flex;
     display: flex;
     justify-content: center;
@@ -435,18 +438,19 @@ body {
     align-items: center;
     flex-direction: row;
     margin: 0;
-    margin-top: 200px;
+    margin-top: 150px;
     width: 100%;
-    height: 5%;
+    height: 7%;
   }
-  body header .header-main .main-up .header-main-text .line-head img {
-    width: 130px;
+  body header .header-main .main-up .header-main-text .line-head svg {
+    width: 150px;
+    height: 150px;
   }
   body header .header-main .main-up .allstars {
     overflow: hidden;
     z-index: 0;
     width: 100%;
-    height: 70%;
+    height: 80%;
     display: flex;
     display: flex;
     justify-content: center;
@@ -455,74 +459,59 @@ body {
     flex-direction: row;
     flex-direction: row;
     position: absolute;
-    gap: 70%;
     margin: 0;
     padding: 0;
   }
   body header .header-main .main-up .allstars .star1 {
-    position: absolute;
+    overflow: hidden;
+    position: relative;
     margin: 0;
     padding: 0;
-    top: 50px;
-    left: 150px;
-    width: 100%;
+    width: 8%;
+    margin-bottom: 150px;
   }
-  body header .header-main .main-up .allstars .star1 i {
-    color: #2b7ef8;
-    font-size: 20px;
+  body header .header-main .main-up .allstars .star1 svg {
+    width: 24px;
+    height: 24px;
   }
   body header .header-main .main-up .allstars .star2 {
-    position: absolute;
     overflow: hidden;
-    width: 100%;
-    top: 240px;
-    right: 150px;
+    width: 8%;
+    margin-top: 120px;
+    margin-right: 250px;
   }
-  body header .header-main .main-up .allstars .star2 i {
-    color: #2b7ef8;
-    font-size: 20px;
+  body header .header-main .main-up .allstars .star2 svg {
+    width: 24px;
+    height: 24px;
   }
   body header .header-main .main-up .circle-right {
-    position: absolute;
     overflow: hidden;
     z-index: 0;
     width: 100%;
-    height: 40%;
+    height: 100%;
     margin: 0;
     padding: 0;
-    top: 250px;
-    left: 200px;
+    margin-right: 10px;
+    margin-top: 5px;
   }
-  body header .header-main .main-up .circle-right i {
-    margin: 0;
-    background: linear-gradient(#E0EDFF, rgba(239, 235, 255, 0));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 300px;
-    opacity: 100%;
+  body header .header-main .main-up .circle-right svg {
+    width: 100%;
+    height: 100%;
   }
   body header .header-main .main-up .circle-left {
-    position: absolute;
     overflow: hidden;
     z-index: 0;
-    width: 100%;
-    height: 40%;
+    width: 228px;
+    height: 228px;
     margin: 0;
     margin-top: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    top: 10px;
-    right: 200px;
+    justify-content: end;
   }
-  body header .header-main .main-up .circle-left i {
-    background: linear-gradient(#E0EDFF, rgba(239, 235, 255, 0));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 300px;
-    opacity: 100%;
+  body header .header-main .main-up .circle-left svg {
+    width: 80%;
+    height: 80%;
   }
   body header .header-main .header-down {
     overflow: hidden;
@@ -531,7 +520,7 @@ body {
     text-align: center;
     align-items: center;
     flex-direction: row;
-    width: 100%;
+    width: 90%;
     height: 100px;
   }
   body header .header-main .header-down .header-button {
@@ -542,10 +531,18 @@ body {
     align-items: center;
     flex-direction: row;
     flex-direction: row;
-    gap: 30px;
+    gap: 16px;
   }
-  body header .header-main .header-down .header-button :nth-child(2) {
+  body header .header-main .header-down .header-button a {
+    width: 156px;
+    height: 40px;
+    background-color: #ebf3fe;
+    text-decoration-line: none;
+    border-radius: 6px;
+  }
+  body header .header-main .header-down .header-button a button {
     color: #2b7ef8;
+    border-radius: 6px;
     background-color: #ebf3fe;
   }
   body header .header-main .header-down .header-button button {
@@ -557,31 +554,48 @@ body {
     text-align: center;
     align-items: center;
     flex-direction: row;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: bolder;
-    width: 180px;
-    height: 50px;
+    width: 156px;
+    height: 40px;
     border-radius: 6px;
     background-color: #2b7ef8;
     color: #ffffff;
   }
   body main {
     font-family: "yekan";
-    margin-top: 60px;
+    margin: 0;
     width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
     flex-direction: column;
+    justify-content: start;
     overflow: hidden;
     gap: 20px;
   }
   body main .main-slid1 {
     overflow: hidden;
-    width: 95%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    height: 50%;
+    width: 90%;
   }
   body main .main-slid1 img {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    margin: 0;
     height: auto;
     width: 100%;
   }
@@ -594,6 +608,7 @@ body {
     text-align: center;
     align-items: center;
     flex-direction: column;
+    justify-content: start;
   }
   body main .main-slid2 .main-slid2-title {
     display: flex;
@@ -601,15 +616,16 @@ body {
     text-align: center;
     align-items: center;
     flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    height: 250px;
+    justify-content: start;
+    gap: 40px;
+    width: 90%;
+    height: 150px;
     margin: 0;
     padding: 0;
   }
   body main .main-slid2 .main-slid2-title h2 {
-    font-size: 24px;
-    font-weight: lighter;
+    font-size: 20px;
+    font-weight: bolder;
   }
   body main .main-slid2 .main-slid2-title div {
     width: 100%;
@@ -623,12 +639,13 @@ body {
   body main .main-slid2 .main-slid2-title div p {
     font-size: 12px;
     font-weight: lighter;
-    width: 80%;
+    width: 100%;
   }
   body main .main-slid2 .main-slid2-card {
     overflow: hidden;
-    gap: 20px;
+    gap: 5px;
     margin: 0;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -638,13 +655,16 @@ body {
     flex-wrap: wrap;
   }
   body main .main-slid2 .main-slid2-card .main-slid2-card {
-    box-shadow: 0 4px 1px rgba(0, 0, 0, 0.031372549);
+    border: 1px solid #F5F6F8;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.031372549);
     border-radius: 24px;
     background-color: white;
-    width: 40%;
+    width: 45%;
+    height: 100%;
     margin: 0;
     padding: 0;
-    padding-top: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -652,10 +672,9 @@ body {
     flex-direction: column;
     gap: 5px;
   }
-  body main .main-slid2 .main-slid2-card .main-slid2-card img {
-    width: 25px;
-    background-color: #f5fbff;
-    border-radius: 10px;
+  body main .main-slid2 .main-slid2-card .main-slid2-card svg {
+    width: 40px;
+    height: 40px;
   }
   body main .main-slid2 .main-slid2-card .main-slid2-card .main-card-text {
     margin: 0;
@@ -668,7 +687,7 @@ body {
   }
   body main .main-slid2 .main-slid2-card .main-slid2-card .main-card-text h3 {
     font-family: "yekan";
-    font-size: 15px;
+    font-size: 12px;
     font-weight: bold;
   }
   body main .main-slid2 .main-slid2-card .main-slid2-card .main-card-text p {
@@ -711,6 +730,7 @@ body {
     width: 100%;
   }
   body main .main-slid3 .main-slid3-text p {
+    width: 95%;
     height: 10%;
     font-size: 12px;
     font-weight: lighter;
@@ -723,23 +743,27 @@ body {
     font-weight: bolder;
   }
   body main .main-slid3 .main-slid3-text button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.0941176471);
     height: 50px;
-    width: 50%;
+    width: 100%;
     font-family: "yekan";
     font-size: 12px;
     font-weight: bolder;
     color: #2b7ef8;
     border: none;
   }
-  body main .main-slid3 .main-slid3-text button i {
+  body main .main-slid3 .main-slid3-text button svg {
+    cursor: pointer;
     font-size: 20px;
     font-weight: bolder;
-    height: 100%;
-    width: 10px;
-    margin-top: 20px;
-    margin-right: 10px;
+    height: 50%;
+    width: 30px;
   }
   body main .main-slid3 .main-slid3-image-down {
     display: none;
@@ -750,7 +774,7 @@ body {
   }
   body main .main-slid4 {
     gap: 50px;
-    width: 100%;
+    width: 90%;
     height: 750px;
     overflow: hidden;
     display: flex;
@@ -831,12 +855,12 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     margin: 0;
-    margin-left: 270px;
+    margin-left: 200px;
     margin-right: 10px;
     padding: 0;
     gap: 20px;
     width: 80%;
-    height: 90%;
+    height: 70%;
   }
   body main .main-slid4-allCard .slid4-left-card {
     position: relative;
@@ -850,11 +874,11 @@ body {
   }
   body main .main-slid4-allCard .slid4-left-card-up {
     position: relative;
-    width: 100%;
-    height: 100px;
+    width: 97%;
+    height: 50px;
     margin: 0;
     margin-right: 10px;
-    gap: 20px;
+    gap: 5px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -864,6 +888,10 @@ body {
     justify-content: start;
     text-align: start;
   }
+  body main .main-slid4-allCard .slid4-left-card-up img {
+    width: 40px;
+    height: 40px;
+  }
   body main .main-slid4-allCard .slid4-left-card-about {
     color: #444749;
     display: flex;
@@ -871,12 +899,9 @@ body {
     text-align: center;
     align-items: center;
     flex-direction: column;
-    justify-content: start;
-    text-align: start;
-    align-items: start;
     margin: 10px;
-    font-size: 12px;
-    font-weight: bolder;
+    margin-top: 5px;
+    font-size: 10px;
     color: #666666;
   }
   body main .main-slid4-allCard .slid4-left-card-txt {
@@ -899,6 +924,24 @@ body {
     color: #666666;
     font-size: 12px;
     font-weight: lighter;
+  }
+  body main .main-slid4-allCard .circle-end {
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: start;
+    margin-bottom: 260px;
+  }
+  body main .main-slid4-allCard .circle-end svg {
+    width: 250px;
+    height: 250px;
   }
   body footer {
     font-family: "yekan";
@@ -1112,7 +1155,7 @@ body {
     position: fixed;
     margin: 0;
     padding: 0;
-    height: 13%;
+    height: 8%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -1369,12 +1412,9 @@ body {
     align-items: center;
     flex-direction: row;
     margin: 0;
-    margin-top: 200px;
+    margin-top: 220px;
     width: 100%;
-    height: 8%;
-  }
-  body header .header-main .main-up .header-main-text .line-head img {
-    width: 250px;
+    height: 10%;
   }
   body header .header-main .main-up .allstars {
     overflow: hidden;
@@ -1398,67 +1438,37 @@ body {
     margin: 0;
     padding: 0;
     top: 2px;
-    left: 200px;
+    left: 250px;
     width: 100%;
-  }
-  body header .header-main .main-up .allstars .star1 i {
-    color: #2b7ef8;
-    font-size: 20px;
   }
   body header .header-main .main-up .allstars .star2 {
     position: absolute;
     overflow: hidden;
     width: 100%;
     top: 250px;
-    right: 250px;
-  }
-  body header .header-main .main-up .allstars .star2 i {
-    color: #2b7ef8;
-    font-size: 20px;
+    right: 300px;
   }
   body header .header-main .main-up .circle-right {
-    position: absolute;
     overflow: hidden;
     z-index: 0;
-    width: 100%;
-    height: 45%;
+    width: 452px;
+    height: 452px;
     margin: 0;
     padding: 0;
-    top: 220px;
-    left: 280px;
-  }
-  body header .header-main .main-up .circle-right i {
-    margin: 0;
-    background: linear-gradient(#E0EDFF, rgba(239, 235, 255, 0));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 400px;
-    height: 100%;
-    opacity: 100%;
+    margin-right: 20px;
+    margin-top: 50px;
   }
   body header .header-main .main-up .circle-left {
-    position: absolute;
     overflow: hidden;
     z-index: 0;
-    width: 100%;
-    height: 40%;
+    width: 452px;
+    height: 452px;
     margin: 0;
+    right: 100px;
     margin-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: start;
-    top: 10px;
-    right: 240px;
-  }
-  body header .header-main .main-up .circle-left i {
-    background: linear-gradient(#E0EDFF, rgba(239, 235, 255, 0));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 400px;
-    height: 100%;
-    opacity: 100%;
   }
   body header .header-main .header-down {
     overflow: hidden;
@@ -1480,8 +1490,16 @@ body {
     flex-direction: row;
     gap: 30px;
   }
-  body header .header-main .header-down .header-button :nth-child(2) {
+  body header .header-main .header-down .header-button a {
+    width: 180px;
+    height: 50px;
+    background-color: #ebf3fe;
+    text-decoration-line: none;
+    border-radius: 6px;
+  }
+  body header .header-main .header-down .header-button a button {
     color: #2b7ef8;
+    border-radius: 6px;
     background-color: #ebf3fe;
   }
   body header .header-main .header-down .header-button button {
@@ -1575,7 +1593,8 @@ body {
     flex-wrap: wrap;
   }
   body main .main-slid2 .main-slid2-card .main-slid2-card {
-    box-shadow: 0 4px 1px rgba(0, 0, 0, 0.031372549);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.031372549);
+    border: 1px solid #F5F6F8;
     border-radius: 24px;
     background-color: white;
     width: 22%;
@@ -1633,7 +1652,7 @@ body {
     text-align: center;
     align-items: center;
     flex-direction: column;
-    width: 50%;
+    width: 60%;
     font-family: "yekan";
   }
   body main .main-slid3 .main-slid3-text strong {
@@ -1664,23 +1683,28 @@ body {
     font-weight: bolder;
   }
   body main .main-slid3 .main-slid3-text button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: start;
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.0941176471);
     height: 50px;
-    width: 50%;
+    width: 80%;
     font-family: "yekan";
-    font-size: 12px;
+    font-size: 20px;
     font-weight: bolder;
     color: #2b7ef8;
     border: none;
   }
-  body main .main-slid3 .main-slid3-text button i {
+  body main .main-slid3 .main-slid3-text button svg {
+    cursor: pointer;
     font-size: 20px;
     font-weight: bolder;
-    height: 100%;
-    width: 10px;
-    margin-top: 20px;
-    margin-right: 10px;
+    height: 50%;
+    width: 30px;
   }
   body main .main-slid3 .main-slid3-image-down {
     display: flex;
@@ -1772,7 +1796,7 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     margin: 0;
-    margin-left: 230px;
+    margin-left: 200px;
     margin-right: 10px;
     padding: 0;
     gap: 20px;
@@ -1841,6 +1865,20 @@ body {
     font-size: 12px;
     font-weight: lighter;
   }
+  body main .main-slid4 .circle-end {
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: start;
+    margin-bottom: 260px;
+  }
   body footer {
     font-family: "yekan";
     margin-top: 100px;
@@ -1866,7 +1904,7 @@ body {
     font-weight: bolder;
   }
   body footer .footer-title .footer-line {
-    width: 223px;
+    width: 200px;
     height: 0;
     border: 1px solid #AFAFAF;
   }
@@ -1896,16 +1934,11 @@ body {
     text-align: center;
     align-items: center;
     flex-direction: row;
+    justify-content: start;
     gap: 20px;
   }
-  body footer .footer-main-right strong i {
-    font-size: 20px;
-    font-weight: bolder;
-  }
   body footer .footer-main-right address {
-    width: 60%;
-    height: 100px;
-    font-family: "yekan";
+    width: 70%;
     font-size: 16px;
     font-weight: lighter;
     display: flex;
@@ -1913,22 +1946,22 @@ body {
     text-align: center;
     align-items: center;
     flex-direction: row;
-  }
-  body footer .footer-main-right address img {
-    width: 24px;
+    justify-content: start;
+    gap: 10px;
   }
   body footer .footer-main-right address p {
-    font-family: "yekan";
+    font-size: 10px;
   }
   body footer .footer-main-left {
     width: 40%;
-    height: 100%;
+    height: 335px;
     font-family: "yekan";
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
     flex-direction: column;
+    text-align: start;
     align-items: start;
   }
   body footer .footer-main-left h2 {
@@ -1948,6 +1981,14 @@ body {
     font-size: 16px;
     font-weight: lighter;
   }
+  body footer .footer-main-left form {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    width: 90%;
+  }
   body footer .footer-main-left .side-email {
     display: flex;
     justify-content: center;
@@ -1955,20 +1996,21 @@ body {
     align-items: center;
     flex-direction: row;
     position: relative;
-    align-items: end;
-    justify-content: end;
+    align-items: start;
+    justify-content: start;
     width: 100%;
   }
   body footer .footer-main-left .side-email .button-footer {
     position: relative;
     height: 60px;
-    width: 350px;
+    width: 100%;
   }
   body footer .footer-main-left .side-email input {
+    position: relative;
     width: 100%;
     height: 48px;
     font-family: "yekan";
-    padding: 5px;
+    padding: 5px 20px;
     margin: 0;
     border-radius: 10px;
     border: 1px solid #A1A1A1;
@@ -1976,7 +2018,7 @@ body {
     font-weight: lighter;
   }
   body footer .footer-main-left .side-email button {
-    left: 15px;
+    left: 10px;
     top: 8px;
     padding: 0;
     margin: 0;
@@ -1995,7 +2037,7 @@ body {
     margin: 0;
     margin-top: 50px;
     width: 100%;
-    height: 110px;
+    height: 80px;
   }
   body footer .footer-down h3 {
     color: #666666;
@@ -2018,7 +2060,7 @@ body {
     position: fixed;
     margin: 0;
     padding: 0;
-    height: 13%;
+    height: 10%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -2327,41 +2369,26 @@ body {
     font-size: 40px;
   }
   body header .header-main .main-up .circle-right {
+    overflow: hidden;
     z-index: 0;
-    width: 50%;
-    height: 50%;
+    width: 452px;
+    height: 452px;
     margin: 0;
     padding: 0;
-    margin-left: 2px;
-    margin-top: 8px;
-  }
-  body header .header-main .main-up .circle-right i {
-    margin: 0;
-    background: linear-gradient(#E0EDFF, rgba(239, 235, 255, 0));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 500px;
-    opacity: 100%;
+    margin-right: 200px;
+    margin-top: 50px;
   }
   body header .header-main .main-up .circle-left {
+    overflow: hidden;
     z-index: 0;
-    width: 50%;
-    height: 50%;
+    width: 452px;
+    height: 452px;
     margin: 0;
-    margin-left: 300px;
-    margin-top: 100px;
+    margin-left: 30px;
+    margin-top: 180px;
     display: flex;
     flex-direction: column;
     justify-content: start;
-  }
-  body header .header-main .main-up .circle-left i {
-    background: linear-gradient(#E0EDFF, rgba(239, 235, 255, 0));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 500px;
-    opacity: 100%;
   }
   body header .header-main .header-down {
     overflow: hidden;
@@ -2383,8 +2410,16 @@ body {
     flex-direction: row;
     gap: 30px;
   }
-  body header .header-main .header-down .header-button :nth-child(2) {
+  body header .header-main .header-down .header-button a {
+    width: 180px;
+    height: 50px;
+    background-color: #ebf3fe;
+    text-decoration-line: none;
+    border-radius: 6px;
+  }
+  body header .header-main .header-down .header-button a button {
     color: #2b7ef8;
+    border-radius: 6px;
     background-color: #ebf3fe;
   }
   body header .header-main .header-down .header-button button {
@@ -2476,7 +2511,8 @@ body {
     flex-direction: row;
   }
   body main .main-slid2 .main-slid2-card .main-slid2-card {
-    box-shadow: 0 4px 1px rgba(0, 0, 0, 0.031372549);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.031372549);
+    border: 1px solid #F5F6F8;
     border-radius: 24px;
     background-color: white;
     width: 100%;
@@ -2548,9 +2584,15 @@ body {
     font-weight: bolder;
   }
   body main .main-slid3 .main-slid3-text button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: start;
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.0941176471);
-    height: 100px;
+    height: 50px;
     width: 80%;
     font-family: "yekan";
     font-size: 20px;
@@ -2558,11 +2600,12 @@ body {
     color: #2b7ef8;
     border: none;
   }
-  body main .main-slid3 .main-slid3-text button i {
+  body main .main-slid3 .main-slid3-text button svg {
+    cursor: pointer;
     font-size: 20px;
     font-weight: bolder;
-    width: 10px;
-    margin-right: 10px;
+    height: 50%;
+    width: 30px;
   }
   body main .main-slid3 .main-slid3-image-up {
     display: none;
@@ -2705,6 +2748,20 @@ body {
     font-size: 16px;
     font-weight: lighter;
   }
+  body main .main-slid4 .circle-end {
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: start;
+    margin-bottom: 260px;
+  }
   body footer {
     font-family: "yekan";
     margin-top: 100px;
@@ -2744,7 +2801,7 @@ body {
   }
   body footer .footer-main-right {
     margin: 0;
-    width: 40%;
+    width: 50%;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -2760,16 +2817,11 @@ body {
     text-align: center;
     align-items: center;
     flex-direction: row;
-    gap: 30px;
-  }
-  body footer .footer-main-right strong i {
-    font-size: 20px;
-    font-weight: bolder;
+    justify-content: start;
+    gap: 20px;
   }
   body footer .footer-main-right address {
-    width: 80%;
-    height: 100px;
-    font-family: "yekan";
+    width: 61%;
     font-size: 16px;
     font-weight: lighter;
     display: flex;
@@ -2777,23 +2829,22 @@ body {
     text-align: center;
     align-items: center;
     flex-direction: row;
-    gap: 10px;
-  }
-  body footer .footer-main-right address img {
-    width: 24px;
+    justify-content: start;
+    gap: 20px;
   }
   body footer .footer-main-right address p {
-    font-family: "yekan";
+    font-size: 14px;
   }
   body footer .footer-main-left {
-    width: 45%;
-    height: 100%;
+    width: 30%;
+    height: 335px;
     font-family: "yekan";
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
     flex-direction: column;
+    text-align: start;
     align-items: start;
   }
   body footer .footer-main-left h2 {
@@ -2813,6 +2864,14 @@ body {
     font-size: 16px;
     font-weight: lighter;
   }
+  body footer .footer-main-left form {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    width: 95%;
+  }
   body footer .footer-main-left .side-email {
     display: flex;
     justify-content: center;
@@ -2820,21 +2879,21 @@ body {
     align-items: center;
     flex-direction: row;
     position: relative;
-    align-items: end;
-    justify-content: end;
+    align-items: start;
+    justify-content: start;
     width: 100%;
   }
   body footer .footer-main-left .side-email .button-footer {
     position: relative;
     height: 60px;
-    width: 400px;
+    width: 100%;
   }
   body footer .footer-main-left .side-email input {
     position: relative;
     width: 100%;
     height: 48px;
     font-family: "yekan";
-    padding: 5px;
+    padding: 5px 20px;
     margin: 0;
     border-radius: 10px;
     border: 1px solid #A1A1A1;
@@ -2861,7 +2920,7 @@ body {
     margin: 0;
     margin-top: 50px;
     width: 100%;
-    height: 110px;
+    height: 80px;
   }
   body footer .footer-down h3 {
     color: #666666;
@@ -3226,8 +3285,16 @@ body {
     flex-direction: row;
     gap: 30px;
   }
-  body header .header-main .header-down .header-button :nth-child(2) {
+  body header .header-main .header-down .header-button a {
+    width: 180px;
+    height: 50px;
+    background-color: #ebf3fe;
+    text-decoration-line: none;
+    border-radius: 6px;
+  }
+  body header .header-main .header-down .header-button a button {
     color: #2b7ef8;
+    border-radius: 6px;
     background-color: #ebf3fe;
   }
   body header .header-main .header-down .header-button button {
@@ -3266,10 +3333,12 @@ body {
   body main .main-slid1 img {
     height: auto;
     width: 85%;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.0509803922);
   }
   body main .main-slid2 {
     overflow: hidden;
     gap: 60px;
+    width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -3311,7 +3380,8 @@ body {
     overflow: hidden;
     gap: 50px;
     margin: 0;
-    width: 80%;
+    width: 100%;
+    height: 350px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -3334,6 +3404,7 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.0509803922);
   }
   body main .main-slid2 .main-slid2-card .main-slid2-card .main-card-text {
     margin: 0;
@@ -3345,6 +3416,7 @@ body {
     flex-direction: column;
   }
   body main .main-slid2 .main-slid2-card .main-slid2-card .main-card-text h3 {
+    padding: 10px;
     font-size: 20px;
     font-weight: bolder;
   }
@@ -3556,7 +3628,7 @@ body {
     overflow: hidden;
     position: absolute;
     z-index: 0;
-    width: 50%;
+    width: 100%;
     height: 50%;
     display: flex;
     justify-content: center;
@@ -3564,8 +3636,7 @@ body {
     align-items: center;
     flex-direction: row;
     justify-content: start;
-    left: 1000px;
-    margin-bottom: 200px;
+    margin-bottom: 260px;
   }
   body footer {
     font-family: "yekan";
