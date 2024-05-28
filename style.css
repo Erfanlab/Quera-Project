@@ -925,29 +925,23 @@ body {
     font-size: 12px;
     font-weight: lighter;
   }
-  body main .main-slid4-allCard .circle-end {
+  body .circle-end {
+    display: none;
     overflow: hidden;
     position: absolute;
-    z-index: 0;
-    width: 50%;
+    left: 35%;
+    z-index: -1;
+    width: 100%;
     height: 50%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    flex-direction: row;
-    justify-content: start;
-    margin-bottom: 260px;
   }
-  body main .main-slid4-allCard .circle-end svg {
+  body .circle-end svg {
     width: 250px;
-    height: 250px;
   }
   body footer {
     font-family: "yekan";
     margin-top: 100px;
     width: 90%;
-    height: 800px;
+    height: 550px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -966,7 +960,7 @@ body {
     flex-direction: row;
   }
   body footer .footer-title h2 {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: light;
   }
   body footer .footer-title .footer-line {
@@ -976,8 +970,8 @@ body {
   }
   body footer .footer-main {
     width: 100%;
-    height: 400px;
-    gap: 100px;
+    height: 450px;
+    gap: 50px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -985,7 +979,10 @@ body {
     flex-direction: column;
     justify-content: start;
   }
-  body footer .footer-main-right {
+  body footer .footer-main-right-desktop {
+    display: none;
+  }
+  body footer .footer-main-right-phone {
     margin: 0;
     width: 100%;
     height: 40%;
@@ -994,45 +991,41 @@ body {
     text-align: center;
     align-items: center;
     flex-direction: row;
-    gap: 15px;
+    gap: 10px;
     flex-wrap: wrap;
   }
-  body footer .footer-main-right .right-footer {
+  body footer .footer-main-right-phone .right-footer {
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
     flex-direction: column;
     width: 50%;
-    height: 80%;
+    height: 100%;
     gap: 10px;
   }
-  body footer .footer-main-right .right-footer strong {
+  body footer .footer-main-right-phone .right-footer strong {
+    padding: 5px;
     border: 1px solid rgba(128, 128, 128, 0.168627451);
-    width: 100%;
+    width: 90%;
     height: 100%;
     border-radius: 16px;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: lighter;
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
     flex-direction: row;
-    color: #2b7ef8;
     gap: 2px;
   }
-  body footer .footer-main-right .right-footer strong i {
-    font-size: 24px;
-    font-weight: bolder;
-  }
-  body footer .footer-main-right address {
+  body footer .footer-main-right-phone address {
     border: 1px solid rgba(128, 128, 128, 0.168627451);
     border-radius: 16px;
-    width: 40%;
-    height: 80%;
+    width: 35%;
+    height: 100%;
     font-family: "yekan";
-    font-size: 12px;
+    font-size: 10px;
     font-weight: lighter;
     display: flex;
     justify-content: center;
@@ -1040,17 +1033,19 @@ body {
     align-items: center;
     flex-direction: column;
   }
-  body footer .footer-main-right address span {
+  body footer .footer-main-right-phone address span {
     color: #2b7ef8;
     font-size: 24px;
     font-weight: bolder;
   }
-  body footer .footer-main-right address p {
+  body footer .footer-main-right-phone address p {
+    padding: 5px;
     font-family: "yekan";
   }
   body footer .footer-main-left {
     width: 100%;
     height: 30%;
+    margin-top: 40px;
     font-family: "yekan";
     display: flex;
     justify-content: center;
@@ -1059,10 +1054,12 @@ body {
     flex-direction: column;
     align-items: start;
     justify-content: start;
+    text-align: start;
   }
   body footer .footer-main-left h2 {
     width: 100%;
-    font-size: 24px;
+    margin: 0;
+    font-size: 12px;
     font-weight: bolder;
   }
   body footer .footer-main-left p {
@@ -1071,7 +1068,7 @@ body {
     text-align: center;
     align-items: center;
     flex-direction: row;
-    justify-content: center;
+    text-align: start;
     width: 100%;
     font-size: 12px;
     font-weight: lighter;
@@ -1132,7 +1129,7 @@ body {
     margin: 0;
     margin-top: 5px;
     width: 100%;
-    height: 10%;
+    height: 12%;
   }
   body footer .footer-down h3 {
     color: #666666;
@@ -1865,19 +1862,14 @@ body {
     font-size: 12px;
     font-weight: lighter;
   }
-  body main .main-slid4 .circle-end {
+  body .circle-end {
     overflow: hidden;
     position: absolute;
+    margin-bottom: 950px;
+    left: 35%;
     z-index: -1;
     width: 100%;
     height: 50%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    flex-direction: row;
-    justify-content: start;
-    margin-bottom: 260px;
   }
   body footer {
     font-family: "yekan";
@@ -2943,7 +2935,7 @@ body {
     position: fixed;
     margin: 0;
     padding: 0;
-    height: 10%;
+    height: 11%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -2955,7 +2947,7 @@ body {
   body header .nav-bar .nav-bar-main {
     overflow: hidden;
     width: 1232px;
-    height: 50%;
+    height: 100%;
     gap: 0px;
     opacity: 0px;
     margin: 0;
@@ -3244,23 +3236,29 @@ body {
     margin-right: 300px;
   }
   body header .header-main .main-up .circle-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
     overflow: hidden;
     z-index: 0;
     width: 452px;
     height: 452px;
     margin: 0;
     padding: 0;
-    margin-right: 250px;
-    margin-top: 50px;
+  }
+  body header .header-main .main-up .circle-right svg {
+    width: 400px;
+    height: 400px;
   }
   body header .header-main .main-up .circle-left {
+    position: absolute;
+    left: 0;
+    top: 100px;
     overflow: hidden;
     z-index: 0;
     width: 452px;
     height: 452px;
     margin: 0;
-    margin-left: 300px;
-    margin-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -3624,19 +3622,14 @@ body {
     font-size: 16px;
     font-weight: lighter;
   }
-  body main .main-slid4 .circle-end {
+  body .circle-end {
     overflow: hidden;
     position: absolute;
+    margin-bottom: 950px;
+    left: 35%;
     z-index: 0;
     width: 100%;
     height: 50%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    flex-direction: row;
-    justify-content: start;
-    margin-bottom: 260px;
   }
   body footer {
     font-family: "yekan";
@@ -3663,7 +3656,7 @@ body {
     font-weight: bolder;
   }
   body footer .footer-title .footer-line {
-    width: 223px;
+    width: 350px;
     height: 0;
     border: 1px solid #AFAFAF;
   }

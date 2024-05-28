@@ -659,20 +659,8 @@ body {
               }
             }
           }
-          .circle-end {
-            overflow: hidden;
-            position: absolute;
-            z-index: 0;
-            width: 50%;
-            height: 50%;
-            @include flex-center;
-            justify-content: start;
-            margin-bottom: 260px;
-            svg{
-                width: 250px;
-                height: 250px;
-            }
-          }
+          
+          
         }
         // finish slid 4
       }
@@ -680,12 +668,24 @@ body {
     }
 
     //footer scss
+    .circle-end {
+      display: none;
+      overflow: hidden;
+      position: absolute;
+      left: 35%;  
+      z-index: -1;
+      width: 100%;
+      height: 50%;
+      svg{
+        width: 250px;
 
+      }
+    }
     footer {
       font-family: $font-stack;
       margin-top: 100px;
       width: 90%;
-      height: 800px;
+      height: 550px;
       @include flex-center-column;
       justify-content: start;
       margin: 0;
@@ -694,7 +694,7 @@ body {
         gap: 20px;
         @include flex-center;
         h2 {
-          font-size: 10px;
+          font-size: 12px;
           font-weight: light;
         }
         .footer-line {
@@ -706,49 +706,52 @@ body {
       //--------footer main
       .footer-main {
         width: 100%;
-        height: 400px;
-        gap: 100px;
+        height: 450px;
+        gap: 50px;
         @include flex-center-column;
         justify-content: start;
-        &-right {
-          margin: 0;
-          width: 100%;
-          height: 40%;
-          @include flex-center;
-          gap: 15px;
-          flex-wrap: wrap;
-          .right-footer {
-            @include flex-center-column;
-            width: 50%;
-            height: 80%;
-            gap: 10px;
-            strong {
-              border: 1px solid #8080802b;
+        &-right-desktop {
+            display: none;    }     
+            &-right-phone {
+              margin: 0;
               width: 100%;
-              height: 100%;
-              border-radius: 16px;
-              @include font-size-lighter-sm-p;
+              height: 40%;
               @include flex-center;
-              color: $items-color-primary;
-              gap: 2px;
-              i {
-                @include font-size-bold-md-p;
-              }
-            }
+              gap: 10px;
+              flex-wrap: wrap;
+              .right-footer {
+                @include flex-center-column;
+                width: 50%;
+                height: 100%;
+                gap: 10px;
+                strong {
+                  padding: 5px;
+                  border: 1px solid #8080802b;
+                  width: 90%;
+                  height: 100%;
+                  border-radius: 16px;
+                  font-size: $font-verysmall;
+                  font-weight: lighter;
+                  @include flex-center;
+                  gap: 2px;
+                 
+                }
           }
           address {
             border: 1px solid #8080802b;
             border-radius: 16px;
-            width: 40%;
-            height: 80%;
+            width: 35%;
+            height: 100%;
             font-family: $font-stack;
-            @include font-size-lighter-sm-p;
+            font-size: $font-verysmall;
+            font-weight: lighter;
             @include flex-center-column;
             span {
               color: $items-color-primary;
               @include font-size-bold-md-p;
             }
             p {
+              padding:5px;
               font-family: $font-stack;
             }
           }
@@ -758,17 +761,20 @@ body {
         &-left {
           width: 100%;
           height: 30%;
+          margin-top: 40px;
           font-family: $font-stack;
           @include flex-center-column;
           align-items: start;
           justify-content: start;
+          text-align: start;
           h2 {
             width: 100%;
-            @include font-size-bold-md-p;
+            margin: 0;
+            @include font-size-bold-sm-p;
           }
           p {
             @include flex-center;
-            justify-content: center;
+            text-align: start;
             width: 100%;
             @include font-size-lighter-sm-p;
           }
@@ -822,7 +828,7 @@ body {
         margin: 0;
         margin-top: 5px;
         width: 100%;
-        height: 10%;
+        height: 12%;
         h3 {
           color: $font-color-gray-opacity;
           font-family: $font-stack;
@@ -1442,21 +1448,20 @@ body {
             }
           }
         }
-        .circle-end {
-            overflow: hidden;
-            position: absolute;
-            z-index: -1;
-            width: 100%;
-            height: 50%;
-            @include flex-center;
-            justify-content: start;
-            margin-bottom: 260px;
-          }
+    
         // finish slid 4
       }
       /// finish main body-----
     }
-
+    .circle-end {
+      overflow: hidden;
+      position: absolute;
+      margin-bottom: 950px;
+      left: 35%;
+      z-index: -1;
+      width: 100%;
+      height: 50%;
+    }
   
     //footer scss
     footer {
@@ -2336,7 +2341,7 @@ body {
         position: fixed;
         margin: 0;
         padding: 0;
-        height: 10%;
+        height: 11%;
         width: 100%;
         @include flex-center;
         background-color: $primary-background-color;
@@ -2344,7 +2349,7 @@ body {
         .nav-bar-main {
           overflow: hidden;
           width: 1232px;
-          height: 50%;
+          height: 100%;
           gap: 0px;
           opacity: 0px;
           margin: 0;
@@ -2588,26 +2593,33 @@ body {
             }
           }
           .circle-right {
+            position: absolute;
+            right: 0;
+            bottom: 0;
             overflow: hidden;
             z-index: 0;
             width: 452px;
             height: 452px;
             margin: 0;
             padding: 0;
-            margin-right: 250px;
-            margin-top: 50px;
+            svg{
+              width: 400px;
+              height: 400px;
+            }
           }
           .circle-left {
+            position: absolute;
+            left: 0;
+            top: 100px;
             overflow: hidden;
             z-index: 0;
             width: 452px;
             height: 452px;
             margin: 0;
-            margin-left: 300px;
-            margin-top: 100px;
             display: flex;
             flex-direction: column;
             justify-content: start;
+       
           }
         }
         .header-down {
@@ -2801,7 +2813,6 @@ body {
         height: 1120px;
         overflow: hidden;
         @include flex-center-column;
-
         &-title {
           @include flex-center-column;
           font-family: $font-stack;
@@ -2884,23 +2895,26 @@ body {
                 }
               }
             }
+            
           }
+
+          
         }
-        .circle-end {
-          overflow: hidden;
-          position: absolute;
-          z-index: 0;
-          width: 100%;
-          height: 50%;
-          @include flex-center;
-          justify-content: start;
-          margin-bottom: 260px;
-        }
+        
         // finish slid 4
       }
+      
       /// finish main body-----
     }
-
+    .circle-end {
+      overflow: hidden;
+      position: absolute;
+      margin-bottom: 950px;
+      left: 35%;
+      z-index: 0;
+      width: 100%;
+      height: 50%;
+    }
     //footer scss
     footer {
       font-family: $font-stack;
@@ -2916,7 +2930,7 @@ body {
           @include font-size-bold-md;
         }
         .footer-line {
-          width: 223px;
+          width: 350px;
           height: 0;
           border: 1px solid $footr-line;
         }
