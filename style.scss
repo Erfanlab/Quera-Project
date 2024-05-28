@@ -1487,7 +1487,10 @@ body {
         .footer-main {
           width: 100%;
           @include flex-center;
-          &-right {
+          &-right-desktop{
+            display: none;
+          }
+          &-right-phone{
             margin: 0;
             width: 50%;
             @include flex-center-column;
@@ -2196,6 +2199,9 @@ body {
     }
 
     //footer scss
+    .circle-end{
+    display: none;
+    }
     footer {
       font-family: $font-stack;
       margin-top: 100px;
@@ -2219,7 +2225,9 @@ body {
       .footer-main {
         width: 100%;
         @include flex-center;
-        &-right {
+        &-right-phone{
+        display: none;}
+        &-right-desktop{
           margin: 0;
           width: 50%;
           @include flex-center-column;
@@ -2939,7 +2947,9 @@ body {
       .footer-main {
         width: 100%;
         @include flex-center;
-        &-right {
+        &-right-phone{
+        display: none;}
+        &-right-desktop {
           margin: 0;
           width: 50%;
           @include flex-center-column;
