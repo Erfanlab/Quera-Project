@@ -1,7 +1,7 @@
 @import "./globalstyle.scss";
 @import "./globalcolor.scss";
 @import "./responsive-page1.scss";
-@import "./assets/fonts/yekan-bakh/font-ykan.scss";
+@import "../assets/fonts/yekan-bakh/font-ykan.scss";
 
 :root {
   box-sizing: 0;
@@ -17,6 +17,7 @@ body {
   font-family: $font-stack;
 
   /////////////////phone  480
+  /// چک شد !!!!!!!
   @media only screen and (max-width: $size-smartphone) {
     header {
       overflow: hidden;
@@ -33,7 +34,7 @@ body {
         position: fixed;
         margin: 0;
         padding: 0;
-        height: 11%;
+        height: 8%;
         width: 100%;
         @include flex-center;
         background-color: $primary-background-color;
@@ -839,6 +840,7 @@ body {
   }
 
   /////////////////tablet 481-768///////
+  /// چک شد !!!!!!
   @media only screen and (min-width: $size-min-tablet) and (max-width: $size-tablet) {
     header {
       overflow: hidden;
@@ -857,7 +859,7 @@ body {
         position: fixed;
         margin: 0;
         padding: 0;
-        height: 8%;
+        height: 10%;
         width: 100%;
         @include flex-center;
         background-color: $primary-background-color;
@@ -1594,7 +1596,7 @@ body {
 //////////////////finish page one //////////////////////
 
   /////////////////latop 1279 ///////
-
+////    چک شد !!!!
   @media only screen and (min-width: $size-min-laptop) and (max-width: $size-laptop) {
     header {
       overflow: hidden;
@@ -1613,7 +1615,7 @@ body {
         position: fixed;
         margin: 0;
         padding: 0;
-        height: 10%;
+        height:11%;
         width: 100%;
         @include flex-center;
         background-color: $primary-background-color;
@@ -2332,6 +2334,7 @@ body {
 //////////////////finish page one //////////////////////
 
   ///////////////// largdesktop tomore///////
+  /// چک شد !!!!!!
   @media only screen and (min-width: $size-laptop) {
     header {
       overflow: hidden;

@@ -89,6 +89,10 @@
   margin: 0;
 }
 
+.sendMessage {
+  cursor: pointer;
+}
+
 body {
   background-color: #F9FAFB;
   display: flex;
@@ -597,8 +601,8 @@ body {
     border: 1px solid #E0E0E0;
   }
   body main .section-left {
-    border: 1px solid #F5F6F8;
-    box-shadow: 0 0 2px #666666;
+    border: 1px solid rgba(128, 128, 128, 0.2078431373);
+    box-shadow: 0 0 1px rgba(128, 128, 128, 0.2078431373);
     border-radius: 16px;
     padding: 10px;
     margin: 0;
@@ -632,6 +636,7 @@ body {
     text-align: center;
     align-items: center;
     flex-direction: row;
+    margin-top: 15px;
   }
   body main .section-left .section-up form label {
     margin: 0;
@@ -698,6 +703,8 @@ body {
     height: 100%;
   }
   body main .section-left .section-main form label {
+    font-size: 16px;
+    font-weight: bolder;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -758,18 +765,20 @@ body {
     border: none;
   }
   body main .callMe-down {
+    margin-top: 50px;
     width: 100%;
-    height: 100px;
+    height: 70px;
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
     flex-direction: row;
+    align-items: start;
     gap: 1px;
   }
   body main .callMe-down .title-call {
     width: 20%;
-    height: 90%;
+    height: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -779,14 +788,18 @@ body {
     font-weight: bolder;
   }
   body main .callMe-down .title-call p {
+    height: 100%;
     width: 100%;
-    font-size: 10px;
+    font-size: 16px;
+    font-weight: bolder;
   }
   body main .callMe-down .title-call a {
-    font-size: 15px;
-    width: 40%;
+    font-size: 12px;
+    font-weight: bolder;
+    width: 100%;
     color: #000000;
     text-decoration-line: none;
+    padding-bottom: 10px;
   }
   body main .callMe-down strong {
     display: flex;
@@ -795,9 +808,10 @@ body {
     align-items: center;
     flex-direction: row;
     justify-content: start;
+    align-items: start;
     gap: 5px;
     width: 50%;
-    height: 60%;
+    height: 100%;
     border: 1px solid rgba(128, 128, 128, 0.231372549);
     border-radius: 14px;
   }
@@ -807,7 +821,7 @@ body {
     text-align: center;
     align-items: center;
     flex-direction: row;
-    width: 15%;
+    width: 20%;
     height: 100%;
   }
   body main .socialmedia-phone {
@@ -1053,7 +1067,7 @@ body {
     position: fixed;
     margin: 0;
     padding: 0;
-    height: 11%;
+    height: 10%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -1180,7 +1194,7 @@ body {
   }
   body header .nav-bar .nav-bar-main .nav-bar-right {
     overflow: hidden;
-    width: 90%;
+    width: 95%;
     gap: 20px;
     display: flex;
     justify-content: center;
@@ -1200,7 +1214,7 @@ body {
   body header .nav-bar .nav-bar-main .nav-bar-right strong {
     margin: 0;
     width: 100%;
-    font-size: 16px;
+    font-size: 32px;
     font-weight: bolder;
   }
   body header .nav-bar .nav-bar-main .nav-bar-right .nav-bar-ul {
@@ -1449,7 +1463,7 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: start;
-    width: 90%;
+    width: 75%;
     height: 1300px;
     margin: 0;
     gap: 20px;
@@ -1563,7 +1577,8 @@ body {
     height: 10%;
   }
   body main .section-left .section-up form {
-    gap: 1px;
+    width: 100%;
+    gap: 20px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -1577,8 +1592,11 @@ body {
     text-align: center;
     align-items: center;
     flex-direction: row;
-    width: 100%;
+    width: 80%;
     justify-content: start;
+    font-size: 16px;
+    font-weight: bolder;
+    margin-right: 20px;
   }
   body main .section-left .section-up form input {
     display: flex;
@@ -1588,14 +1606,14 @@ body {
     flex-direction: row;
     text-align: start;
     color: #666666;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: lighter;
     border: 1px solid #E6E6E6;
-    border-radius: 8px;
+    border-radius: 10px;
     margin: 0;
-    margin-left: 20px;
-    padding-right: 5px;
-    width: 90%;
+    margin-right: 15px;
+    padding-right: 15px;
+    width: 78%;
     height: 50px;
   }
   body main .section-left .section-up .label1 {
@@ -1632,6 +1650,8 @@ body {
     height: 100%;
   }
   body main .section-left .section-main form label {
+    font-size: 16px;
+    font-weight: bolder;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -1645,12 +1665,12 @@ body {
     width: 100%;
     height: 50px;
     color: #666666;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: lighter;
     border: 1px solid #E6E6E6;
-    border-radius: 6px;
+    border-radius: 10px;
     margin: 0;
-    padding-right: 5px;
+    padding-right: 15px;
   }
   body main .section-left .section-main form .textmore {
     width: 100%;
@@ -1684,7 +1704,7 @@ body {
     border: none;
   }
   body main .callMe-down {
-    width: 100%;
+    width: 90%;
     height: 200px;
     display: flex;
     justify-content: center;
@@ -1693,6 +1713,18 @@ body {
     flex-direction: row;
     gap: 10px;
   }
+  body main .callMe-down .title-call {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: start;
+    width: 100%;
+  }
+  body main .callMe-down .title-call p {
+    padding-left: 10px;
+  }
   body main .callMe-down strong {
     display: flex;
     justify-content: center;
@@ -1700,7 +1732,7 @@ body {
     align-items: center;
     flex-direction: row;
     justify-content: start;
-    gap: 5px;
+    gap: 10px;
     width: 50%;
     height: 60%;
     border: 1px solid rgba(128, 128, 128, 0.231372549);
@@ -1712,12 +1744,14 @@ body {
     text-align: center;
     align-items: center;
     flex-direction: row;
-    width: 20%;
+    width: 10%;
     height: 100%;
     border: none;
   }
   body main .callMe-down strong a {
-    width: 40%;
+    font-size: 16px;
+    font-weight: bolder;
+    width: 50%;
     color: #000000;
     text-decoration-line: none;
   }
@@ -1899,7 +1933,7 @@ body {
   }
   body footer .footer-main-left .side-email input {
     overflow: hidden;
-    width: 280px;
+    width: 450px;
     height: 48px;
     font-family: "yekan";
     padding: 5px;
@@ -1950,7 +1984,7 @@ body {
   body header {
     overflow: hidden;
     font-family: "yekan";
-    height: 500px;
+    height: 100px;
     width: 100%;
     margin-bottom: 50px;
     background: linear-gradient(to bottom, #eef4ff, rgba(255, 255, 255, 0.0941176471));
@@ -1960,7 +1994,7 @@ body {
     position: fixed;
     margin: 0;
     padding: 0;
-    height: 10%;
+    height: 11%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -2349,10 +2383,14 @@ body {
     align-items: center;
     flex-direction: row;
     justify-content: start;
-    width: 90%;
+    width: 80%;
     height: 700px;
     margin: 0;
+    padding-left: 50px;
+    padding-right: 50px;
     gap: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.2078431373);
+    box-shadow: 0 0 1px rgba(128, 128, 128, 0.2078431373);
   }
   body main .section-right {
     height: 70%;
@@ -2373,6 +2411,9 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: start;
+    justify-content: start;
+    text-align: start;
+    align-items: start;
     width: 100%;
     height: 100%;
     gap: 25px;
@@ -2425,7 +2466,7 @@ body {
     flex-direction: row;
     justify-content: start;
     gap: 60px;
-    width: 70%;
+    width: 100%;
   }
   body main .section-right .socialmedia-desk a {
     color: #000000;
@@ -2443,8 +2484,8 @@ body {
     border: 1px solid #E0E0E0;
   }
   body main .section-left {
-    border: 1px solid #F5F6F8;
-    box-shadow: 0 0 2px #666666;
+    border: 1px solid rgba(128, 128, 128, 0.2078431373);
+    box-shadow: 0 0 1px rgba(128, 128, 128, 0.2078431373);
     border-radius: 16px;
     padding: 20px;
     margin: 0;
@@ -2487,6 +2528,7 @@ body {
     align-items: center;
     flex-direction: row;
     width: 100%;
+    padding-right: 40px;
     justify-content: start;
   }
   body main .section-left .section-up form input {
@@ -2497,14 +2539,14 @@ body {
     flex-direction: row;
     text-align: start;
     color: #666666;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: lighter;
     border: 1px solid #E6E6E6;
     border-radius: 8px;
     margin: 0;
-    margin-left: 20px;
+    margin-right: 10px;
     padding-right: 5px;
-    width: 90%;
+    width: 85%;
     height: 40px;
   }
   body main .section-left .section-up .label1 {
@@ -2521,6 +2563,7 @@ body {
   body main .section-left .section-main {
     width: 100%;
     height: 55%;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -2833,7 +2876,7 @@ body {
     position: fixed;
     margin: 0;
     padding: 0;
-    height: 10%;
+    height: 11%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -3326,8 +3369,8 @@ body {
     border: 1px solid #E0E0E0;
   }
   body main .section-left {
-    border: 1px solid #F5F6F8;
-    box-shadow: 0 0 2px #666666;
+    border: 1px solid rgba(128, 128, 128, 0.2078431373);
+    box-shadow: 0 0 1px rgba(128, 128, 128, 0.2078431373);
     border-radius: 16px;
     padding: 20px;
     margin: 0;
@@ -3369,8 +3412,9 @@ body {
     text-align: center;
     align-items: center;
     flex-direction: row;
-    width: 80%;
+    width: 100%;
     justify-content: start;
+    padding-right: 10px;
   }
   body main .section-left .section-up form input {
     display: flex;
@@ -3380,14 +3424,14 @@ body {
     flex-direction: row;
     text-align: start;
     color: #666666;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: lighter;
     border: 1px solid #E6E6E6;
     border-radius: 8px;
     margin: 0;
-    margin-left: 20px;
+    margin-left: 30px;
     padding-right: 10px;
-    width: 70%;
+    width: 80%;
     height: 45px;
   }
   body main .section-left .section-up .label1 {
@@ -3438,7 +3482,7 @@ body {
     width: 92%;
     height: 45px;
     color: #666666;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: lighter;
     border: 1px solid #E6E6E6;
     border-radius: 6px;

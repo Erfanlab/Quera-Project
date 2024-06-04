@@ -1,7 +1,8 @@
-@import './color-page3.scss';
-@import './global-page3.scss';
-@import './responsiv-p3.scss';
+@import './color-page2.scss';
+@import './global-page2.scss';
+@import './responsive-page2.scss';
 @import './font-ykan.scss';
+
 
 :root{
     box-sizing: 0;
@@ -9,22 +10,16 @@
     margin: 0;
 }
 // header scss
-
 body{
-    background-color: $color-background-card;
     @include flex-center-column;
     padding: 0;
     margin: 0;
     font-family: $font-stack;
     background: linear-gradient(to bottom, $main-color-background,$second-color-background);
-    
-
-
-
-    ///////    smart phone max 768
+/////////smart phone max 768
+/// چک شد !!!!!
     @media only screen and (max-width:$size-smartphone) {
-          
-
+         
         header {
             overflow: hidden;
             font-family: $font-stack;
@@ -40,7 +35,7 @@ body{
               position: fixed;
               margin: 0;
               padding: 0;
-              height: 11%;
+              height: 8%;
               width: 100%;
               @include flex-center;
               background-color: $primary-background-color;
@@ -380,285 +375,152 @@ body{
               }
             }
           }
-        //// main page 3
+        
+        //// main page 2
+        
         main{
-            overflow: hidden;
             font-family: $font-stack;
-            position: relative;
-            border-radius: 24px;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        width:100%;
+        height: 1000px;
+        @include flex-center-column;
+        justify-content: start;
+        
+        .about{
             @include flex-center-column;
             justify-content: start;
-            width: 90%;
-            height: 1100px;
-            margin: 0;
-            gap: 20px;
-            .section-right{
-                height:15%;
-                width: 100%;
-                padding: 0;
-                margin: 0 20px;
-                @include flex-center-column;
-                justify-content: start;
-                .callMe{
-                    @include flex-center-column;
-                    justify-content: start;
-                    height: 50%;
-                    gap: 25px;
-                    margin: 0;
-                    padding: 0;
-                    p{
-                        margin: 0;
-                        width: 100%;
-                        @include font-size-lighter-sm;
-                    }
-                h1{
-                    text-align: start;
-                    margin: 1px 0 0 0;
-                    @include font-size-bold-md;
-                }
-                strong{
-                    color: $font-color-gray-opacity;
-                    @include font-size-lighter-sm;
-                    display: none;
-                    gap: 35px;
-                    text-align: start;
-                    a{
-                        @include font-size-lighter-md;
-                        color: $font-color-black;
-                        text-decoration-line: none;                    
-                    }
-                    span{
-                        color:$font-color-black;
-                        margin: 0;
-                        @include font-size-lighter-md;
-                        margin-top: 10px;
-                        padding: 0;
-                        border: none;
-                    }
-                    
-                }
-            }
-        .socialmedia-desk{
-            display: none;
-            justify-content: start;
-            gap: 60px;
             width: 100%;
-            a{
-                color: $font-color-black;
-                text-decoration-line:none; 
-            }
-            span{
-                @include font-size-bold-md-lg;
-                border: none;
-            }
-        }
-        }
+            gap: 50px;
+            height:60%;
+            margin: 0;
         
-        span{
-            display: none;
-            width: 0;
-            height: 85%;
-            border: 1px solid #E0E0E0;
-            
-        
-        }
-        
-        /////     left============
-        
-            .section-left{
-                border: 1px solid $color-background-page3;
-                box-shadow: 0 0 2px $font-color-gray-opacity ;
-                border-radius: 16px;
-                padding: 10px;
-                margin: 0;
-                margin-top: 15px;
-                font-family: $font-stack;
-                height: 50%;
+            &-up{
+                @include flex-center-column;
                 width: 90%;
+                height: 350px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 24px;
+                    object-fit: cover;
+                }
+            }
+            &-left{
                 @include flex-center-column;
                 justify-content: start;
-                gap: 70px;
-                
-            .section-up{
-                @include flex-center;
-                align-items: start;
-                text-align: start;
-                width: 100%;
-                height: 8%;
-                form{
-                    gap: 1px;
-                    @include flex-center;
-                    label{
-                        margin: 0;
+                width: 90%;
+                height: 80%;
+                margin: 0;
+
+                img{
+                    display: none;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 24px;
+                    object-fit: cover;
+                }
+                &-text{
+                    border-radius: 24px;
+                    box-shadow: 0 2px 2px #00000008;
+                    border: 1px solid #F5F6F8;
+                    @include flex-center-column;
+                    width: 100%;
+                    height: 45%;
+                    margin-top: 50px;
+                    .text-up{
                         @include flex-center;
                         width: 100%;
-                        @include font-size-bold-sm;
-                        justify-content: start;
-                    }
-                    input{
-                        @include flex-center;
-                        text-align: start;
-                        color:$font-color-gray-opacity ;
-                        @include font-size-lighter-sm;
-                        border: 1px solid $page3-border;
-                        border-radius: 8px;
+                        height:100px;
                         margin: 0;
-                        margin-left: 10px;
-                        padding-right: 5px;
-                        width: 90%;
-                        height: 40px;
-        
-        
+                        padding: 0;
+                        gap: 20px;
+                        section{
+                            border-radius: 24px;
+                            border: 1px solid #F5F5F5;
+                            width: 230px;
+                            height: 112px;
+                            background-color:$color-background-card;
+                            @include font-size-bold-md-p;
+                            font-family: $font-stack;
+                            @include flex-center-column;
+                            text-align: start;
+                            align-items: start;
+                            padding: 0;
+                            padding-right: 20px;
+                            margin: 0;
+                            text-align: start;
+                            box-shadow: 0 2px 2px #00000008;
+                            :last-child{
+                            @include font-size-lighter-sm-p;
+                            color: $font-color-gray-opacity;
+                        }                    
+                        }
+                    }
+                    .text-down{
+                        width: 100%;
+                        height:100px;
+                        @include flex-center;
+                        width: 100%;
+                        height:100px;
+                        margin: 0;
+                        margin-top: 30px;
+                        padding: 0;
+                        gap: 20px;
+                        section{
+                            border: 1px solid #F5F5F5;
+                            border-radius: 24px;
+                            width: 230px;
+                            height: 112px;
+                            background-color:$color-background-card;
+                            @include font-size-bold-md-p;
+                            font-family: $font-stack;
+                            @include flex-center-column;
+                            align-items: start;
+                            padding: 0;
+                            padding-right: 20px;
+                            margin: 0;
+                            box-shadow: 0 2px 2px #00000008;
+                            :last-child{
+                            @include font-size-lighter-sm-p;
+                            color: $font-color-gray-opacity;
+                        }                    
+                        }
                     }
                 }
-                .label1{
+            }
+            &-right{
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                gap: 10px;
+                @include flex-center-column;
+              
+                h1{
                     margin: 0;
-                    width: 100%;
-                    height: 100%;
-                    @include flex-center-column;
-                    gap: 10px;
+                    font-family: $font-stack;
+                    @include font-size-bold-md-p;
+        
                 }
-                
-            }
-            .section-main{
-                width: 100%;
-                height:55% ;
-                @include flex-center-column;
-                justify-content: start;
-                align-items: start;
-                text-align: start;
-                form{
-                    @include flex-center-column;
-                    align-items: start;
-                    text-align: start;
-                    width: 100%;
-                    height: 100%;
-                    label{
+                h2{
+                    margin: 0;
+                    color: $font-color-gray-opacity;
+                    font-family: $font-stack;
+                    @include font-size-lighter-md-p;
         
-                        @include flex-center;
-                        justify-content: start;
-                        margin: 0;
-                    }
-                    input{
-                        font-family: $font-stack;
-                        width: 100%;
-                        height: 40px;
-                        color:$font-color-gray-opacity ;
-                        @include flex-center;
-                        align-items: start;
-                        justify-content: start;
-                        text-align: start;
-                        @include font-size-lighter-sm;
-                        border: 1px solid $page3-border;
-                        border-radius: 6px;
-                        margin: 0;
-                        padding-right: 10px;
-                         }         
-                .textmore{
-                    width: 100%;
-                    height: 300px;
-                            }        
-                    .label2{
-                        width: 90%;
-                        height: 50%;
-                        @include flex-center-column;
-                        align-items: start;
-                        gap: 10px
-                        
-                    
-                    
-                    }
                 }
-        
-            }
-            button{
-                @include flex-center;
-                
-                width: 92%;
-                height: 50px;
-                font-family: $font-stack;
-                color: $font-color-white;
-                @include font-size-lighter-md;
-                background-color: $background-page3;
-                border-radius: 6px;
-                border: none;
-        
-            }
-            
-            
-        
-        
-        
-        
-            
+                p{
+                    padding: 20px;
+                    @include font-size-lighter-sm-p; 
+                }
             }
         
-        
-            .callMe-down{
-                width: 100%;
-                height:100px;
-                @include flex-center;
-                gap: 1px;
-                .title-call{
-                    width: 20%;
-                    height: 90%;
-                    @include flex-center-column;
-                    @include font-size-bold-sm;
-                    p{
-                        width: 100%;
-                        font-size: 10px;
-                    }
-                    a{
-                        font-size: 15px;
-                        width: 40%;
-                        color: $font-color-black;
-                        text-decoration-line:none ;
-                    }
-                }
-                strong{
-                    @include flex-center;
-                    justify-content: start;
-                    gap: 5px;
-                    width: 50%;
-                    height: 60%;
-                    border: 1px solid #8080803b;
-                    border-radius:14px;
-                    svg{
-                        @include flex-center;
-                        width: 15%;
-                        height: 100%;
-                    }
-                    
-                }
-
-            }
-            .socialmedia-phone{
-                @include flex-center;
-                width: 99%;
-                height: 80px;
-                border-radius: 14px;
-                gap: 100px;
-                border: 1px solid rgba(128, 128, 128, 0.358);
-                a{
-                    text-decoration-line:none ;
-                    color: $font-color-black;
-                    @include font-size-bold-md;
-                    
-                    
-                }
-                span{
-                    @include flex-center;
-                    text-decoration-line:none ;
-                    border: none;
-                }
-                
-           
-            }
-
-
-
         }
-        /// finish main body-----
+        
+        } 
+        ///// ------ finsh nav bar + header + main header -----////
+        /// finish main body-----     
         //footer scss
         .circle-end{
             display: none;
@@ -670,6 +532,7 @@ body{
             @include flex-center-column;
             justify-content: start;
             margin: 0;
+            margin-top: 150px;
             overflow: hidden;
             .footer-title {
               gap: 20px;
@@ -818,10 +681,14 @@ body{
             }
           }
         
+
+
+
     }
-////   tablet min 769 max 1024
+//////// tablet min 769  max 1024
+/// چک شد   !!!!!
     @media only screen and (min-width:$size-min-tablet) and (max-width:$size-tablet) {
-     
+      
         header {
             overflow: hidden;
             font-family: $font-stack;
@@ -837,7 +704,7 @@ body{
               position: fixed;
               margin: 0;
               padding: 0;
-              height: 11%;
+              height: 10%;
               width: 100%;
               @include flex-center;
               background-color: $primary-background-color;
@@ -974,7 +841,7 @@ body{
                       cursor: pointer;
                       text-decoration-line: none;
                     }
-                    :nth-child(3) {
+                    :nth-child(1) {
                       color: $items-color-primary;
                       @include font-size-lighter-sm;
                       li {
@@ -1177,272 +1044,155 @@ body{
               }
             }
           }
+        //// main page 2
         
-        //// main page 3
         main{
             font-family: $font-stack;
-            position: relative;
-            border-radius: 24px;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        width:100%;
+        height: 1100px;
+        @include flex-center-column;
+        
+        .about{
             @include flex-center-column;
             justify-content: start;
-            width: 90%;
-            height: 1300px;
-            margin: 0;
-            gap: 20px;
-            .section-right{
-                height:20%;
-                width: 100%;
-                padding: 0;
-                margin: 0 20px;
-                @include flex-center-column;
-                justify-content: start;
-                .callMe{
-                    @include flex-center-column;
-                    justify-content: start;
-                    height: 60%;
-                    gap: 25px;
-                    margin: 0;
-                    padding: 0;
-                    p{
-                        width: 100%;
-                        @include font-size-lighter-md-p;
-                    }
-                h1{
-                    text-align: start;
-                    margin: 5px 0 0 0;
-                    @include font-size-bold-md-lg;
-                }
-                strong{
-                    color: $font-color-gray-opacity;
-                    @include font-size-lighter-sm;
-                    display: none;
-                    gap: 35px;
-                    text-align: start;
-                    a{
-                        @include font-size-lighter-md;
-                        color: $font-color-black;
-                        text-decoration-line: none;                    
-                    }
-                    span{
-                        color:$font-color-black;
-                        margin: 0;
-                        @include font-size-lighter-md;
-                        margin-top: 10px;
-                        padding: 0;
-                        border: none;
-                    }
-                    
-                }
-            }
-        .socialmedia-desk{
-            display: none;
-            justify-content: start;
-            gap: 60px;
             width: 100%;
-            a{
-                color: $font-color-black;
-                text-decoration-line:none; 
+            gap: 50px;
+            height:100%;
+            margin: 0;
+        
+            &-up{
+                @include flex-center-column;
+                width: 90%;
+                height: 350px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 24px;
+                    object-fit: cover;
+                }
             }
-            span{
-                @include font-size-bold-md-lg;
-                border: none;
-            }
-        }
-        }
-        
-        span{
-            display: none;
-            width: 0;
-            height: 85%;
-            border: 1px solid #E0E0E0;
-            
-        
-        }
-        
-        /////     left============
-        
-            .section-left{
-                border: 1px solid $color-background-page3;
-                box-shadow: 0 0 2px $font-color-gray-opacity ;
-                border-radius: 16px;
-                padding: 20px;
+            &-left{
+                @include flex-center-column;
+                justify-content: start;
+                width: 90%;
+                height: 80%;
                 margin: 0;
-                margin-top: 15px;
-                font-family: $font-stack;
-                height: 100%;
-                width: 90%;
-                @include flex-center-column;
-                justify-content: start;
-                gap: 50px;
-                
-            .section-up{
-                @include flex-center;
-                align-items: start;
-                text-align: start;
-                width: 100%;
-                height: 10%;
-                form{
-                    gap: 1px;
-                    @include flex-center;
-                    label{
-                        margin: 0;
-                        @include flex-center;
-                        width: 100%;
-                        justify-content: start;
-                    }
-                    input{
-                        @include flex-center;
-                        text-align: start;
-                        color:$font-color-gray-opacity ;
-                        @include font-size-lighter-md-p;
-                        border: 1px solid $page3-border;
-                        border-radius: 8px;
-                        margin: 0;
-                        margin-left: 20px;
-                        padding-right: 5px;
-                        width: 90%;
-                        height: 50px;
-        
-        
-                    }
-                }
-                .label1{
-                    margin: 0;
+                margin-top: 10px;
+
+                img{
+                    display: none;
                     width: 100%;
                     height: 100%;
-                    @include flex-center-column;
-                    gap: 10px;
+                    border-radius: 24px;
+                    object-fit: cover;
                 }
-                
-            }
-            .section-main{
-                width: 100%;
-                height:55% ;
-                @include flex-center-column;
-                justify-content: start;
-                align-items: start;
-                text-align: start;
-                form{
+                &-text{
+                    border-radius: 24px;
+                    box-shadow: 0 2px 2px #00000008;
+                    border: 1px solid #F5F6F8;
                     @include flex-center-column;
-                    text-align: start;
                     width: 100%;
-                    height: 100%;
-                    label{
-        
+                    height: 45%;
+                    .text-up{
                         @include flex-center;
-                        justify-content: start;
-                        margin: 0;
-                    }
-                    input{
-                        font-family: $font-stack;
                         width: 100%;
-                        height: 50px;
-                        color:$font-color-gray-opacity ;
-                        @include font-size-lighter-md-p;
-                        border: 1px solid $page3-border;
-                        border-radius: 6px;
+                        height:100px;
                         margin: 0;
-                        padding-right: 5px;
-                        
-                      
-                        
-                         }         
-                .textmore{
-                    width: 100%;
-                    height: 200px;
-                            }        
-                    .label2{
-                        width: 90%;
-                        height: 50%;
-                        @include flex-center-column;
-                        align-items: start;
-                        gap: 10px
-                        
-                    
-                    
+                        padding: 0;
+                        gap: 20px;
+                        section{
+                            border-radius: 24px;
+                            border: 1px solid #F5F5F5;
+                            width: 230px;
+                            height: 112px;
+                            background-color:$color-background-card;
+                            @include font-size-bold-md-p;
+                            font-family: $font-stack;
+                            @include flex-center-column;
+                            text-align: start;
+                            align-items: start;
+                            padding: 0;
+                            padding-right: 20px;
+                            margin: 0;
+                            text-align: start;
+                            box-shadow: 0 2px 2px #00000008;
+                            :last-child{
+                            @include font-size-lighter-sm-p;
+                            color: $font-color-gray-opacity;
+                        }                    
+                        }
+                    }
+                    .text-down{
+                        width: 100%;
+                        height:100px;
+                        @include flex-center;
+                        width: 100%;
+                        height:100px;
+                        margin: 0;
+                        margin-top: 30px;
+                        padding: 0;
+                        gap: 20px;
+                        section{
+                            border: 1px solid #F5F5F5;
+                            border-radius: 24px;
+                            width: 230px;
+                            height: 112px;
+                            background-color:$color-background-card;
+                            @include font-size-bold-md-p;
+                            font-family: $font-stack;
+                            @include flex-center-column;
+                            align-items: start;
+                            padding: 0;
+                            padding-right: 20px;
+                            margin: 0;
+                            box-shadow: 0 2px 2px #00000008;
+                            :last-child{
+                            @include font-size-lighter-sm-p;
+                            color: $font-color-gray-opacity;
+                        }                    
+                        }
                     }
                 }
-        
             }
-            button{
-                @include flex-center;
-                width: 92%;
-                height: 50px;
-                font-family: $font-stack;
-                color: $font-color-white;
-                @include font-size-lighter-md;
-                background-color: $background-page3;
-                border-radius: 6px;
-                border: none;
-        
-            }
-            
-            
-        
-        
-        
-        
-            
-            }
-        
-        
-            .callMe-down{
+            &-right{
+                padding: 0;
+                margin: 0;
+                margin-top: 20px;
                 width: 100%;
-                height: 200px;
-                @include flex-center;
                 gap: 10px;
-                strong{
-                    @include flex-center;
-                    justify-content: start;
-                    gap: 5px;
-                    width: 50%;
-                    height: 60%;
-                    border: 1px solid #8080803b;
-                    border-radius:14px;
-                    span{
-                        @include flex-center;
-                        width: 20%;
-                        height: 100%;
-                        border: none;
-                    }
-                    a{
-                        width: 40%;
-                        color: $font-color-black;
-                        text-decoration-line:none ;
-                    }
+                @include flex-center-column;
+              
+                h1{
+                    margin: 0;
+                    font-family: $font-stack;
+                    @include font-size-bold-md-p;
+        
                 }
-
+                h2{
+                    margin: 0;
+                    color: $font-color-gray-opacity;
+                    font-family: $font-stack;
+                    @include font-size-lighter-md-p;
+        
+                }
+                p{
+                    width: 80%;
+                    @include font-size-lighter-sm-p; 
+                }
             }
-            .socialmedia-phone{
-                @include flex-center;
-                width: 90%;
-                height: 150px;
-                border-radius: 14px;
-                gap: 100px;
-                border: 1px solid rgba(128, 128, 128, 0.358);
-                a{
-                    text-decoration-line:none ;
-                    color: $font-color-black;
-                    @include font-size-bold-md-lg;
-                    
-                    
-                }
-                span{
-                    @include flex-center;
-                    text-decoration-line:none ;
-                    border: none;
-                }
-                
-           
-            }
-
-
-
+        
         }
-            
-        /// finish main body-----
-    
+        
+        }
+        ///// ------ finsh nav bar + header + main header -----////    
+        /// finish main body----- 
         //footer scss
+        .circle-end{
+            display: none;
+        }
         footer {
             font-family: $font-stack;
             width: 90%;
@@ -1599,16 +1349,14 @@ body{
             }
           }
 
-
-
     }
-
-///   laptop min 1025 max 1279
+//////   laptop min 1025 max 1279
+/// چک شد !!!!!
     @media only screen and (min-width:$size-min-laptop) and (max-width:$size-laptop) {
         header {
             overflow: hidden;
             font-family: $font-stack;
-            height: 500px;
+            height: 100px;
             width: 100%;
             margin-bottom: 50px;
             background: linear-gradient(
@@ -1622,7 +1370,7 @@ body{
               position: fixed;
               margin: 0;
               padding: 0;
-              height: 10%;
+              height: 11%;
               width: 100%;
               @include flex-center;
               background-color: $primary-background-color;
@@ -1754,7 +1502,7 @@ body{
                       cursor: pointer;
                       text-decoration-line: none;
                     }
-                    :nth-child(3) {
+                    :nth-child(2) {
                       color: $items-color-primary;
                       @include font-size-lighter-sm;
                       li {
@@ -1949,273 +1697,145 @@ body{
               }
             }
           }
-        
-        //// main page 3
+        //// main page 2
         main{
             font-family: $font-stack;
-            position: relative;
-            border-radius: 24px;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        width: 90%;
+        height: 800px;
+        @include flex-center;
+        
+        .about{
             @include flex-center;
-            justify-content: start;
-            width: 90%;
-            height: 700px;
+            width: 100%;
+            height: 100%;
             margin: 0;
-            gap: 20px;
-            .section-right{
-                height:70%;
-                width: 100%;
-                padding: 0;
-                margin: 0 20px;
+            gap: 50px;
+        
+            &-up{
+                display: none;
+            }
+
+            &-left{
                 @include flex-center-column;
                 justify-content: start;
-                .callMe{
-                    @include flex-center-column;
-                    justify-content: start;
+                width: 50%;
+                height: 100%;
+                img{
                     width: 100%;
-                    height: 100%;
-                    gap: 25px;
-                    margin: 0;
-                    padding: 0;
-                    p{
-                        width: 100%;
-                        @include font-size-lighter-md-p;
-                    }
-                h1{
-                    text-align: start;
-                    margin: 5px 0 0 0;
-                    @include font-size-bold-md-lg;
+                    height: 350px;
+                    border-radius: 24px;
+                    object-fit: cover;
                 }
-                strong{
-                    color: $font-color-gray-opacity;
-                    @include font-size-lighter-sm;
-                    @include flex-center;
-                    gap: 35px;
-                    text-align: start;
-                    a{
-                        @include font-size-lighter-md;
-                        color: $font-color-black;
-                        text-decoration-line: none;                    
-                    }
-                    span{
-                        color:$font-color-black;
+                &-text{
+                    border-radius: 24px;
+                    box-shadow: 0 2px 2px #00000008;
+                    border: 1px solid #F5F6F8;
+                    @include flex-center-column;
+                    width: 100%;
+                    height: 45%;
+                    .text-up{
+                        @include flex-center;
+                        width: 100%;
+                        height:100px;
                         margin: 0;
-                        @include font-size-lighter-md;
-                        margin-top: 10px;
                         padding: 0;
-                        border: none;
+                        gap: 20px;
+                        section{
+                            border-radius: 24px;
+                            border: 1px solid #F5F5F5;
+                            width: 230px;
+                            height: 112px;
+                            background-color:$color-background-card;
+                            @include font-size-bold-md-lg;
+                            font-family: $font-stack;
+                            @include flex-center-column;
+                            align-items: start;
+                            padding: 0;
+                            padding-right: 20px;
+                            margin: 0;
+                            margin-right: 10px;
+                            text-align: start;
+                            box-shadow: 0 2px 2px #00000008;
+                            :last-child{
+                            @include font-size-lighter-md;
+                            color: $font-color-gray-opacity;
+                        }                    
+                        }
                     }
-                    
+                    .text-down{
+                        width: 100%;
+                        height:100px;
+                        @include flex-center;
+                        width: 100%;
+                        height:100px;
+                        margin: 0;
+                        margin-top: 30px;
+                        padding: 0;
+                        gap: 20px;
+                        section{
+                            border: 1px solid #F5F5F5;
+                            border-radius: 24px;
+                            width: 230px;
+                            height: 112px;
+                            background-color:$color-background-card;
+                            @include font-size-bold-md-lg;
+                            font-family: $font-stack;
+                            @include flex-center-column;
+                            align-items: start;
+                            padding: 0;
+                            padding-right: 20px;
+                            margin: 0;
+                            margin-right: 10px;
+                            text-align: start;
+                            box-shadow: 0 2px 2px #00000008;
+                            :last-child{
+                            @include font-size-lighter-md;
+                            color: $font-color-gray-opacity;
+                        }                    
+                        }
+                    }
                 }
             }
-        .socialmedia-desk{
-            @include flex-center;
-            justify-content: start;
-            gap: 60px;
-            width: 70%;
-            a{
-                color: $font-color-black;
-                text-decoration-line:none; 
-            }
-            span{
-                @include font-size-bold-md-lg;
-                border: none;
-            }
-        }
-        }
-        
-        span{
-            display: none;
-            width: 0;
-            height: 85%;
-            border: 1px solid #E0E0E0;
-            
-        
-        }
-        
-        /////     left============
-        
-            .section-left{
-                border: 1px solid $color-background-page3;
-                box-shadow: 0 0 2px $font-color-gray-opacity ;
-                border-radius: 16px;
-                padding: 20px;
+            &-right{
+                padding: 0;
                 margin: 0;
-                margin-top: 15px;
-                font-family: $font-stack;
-                height: 70%;
-                width: 90%;
-                @include flex-center-column;
-                justify-content: start;
-                gap: 50px;
-                
-            .section-up{
-                @include flex-center;
-                align-items: start;
-                text-align: start;
-                width: 100%;
-                height: 10%;
-                form{
-                    gap: 1px;
-                    @include flex-center;
-                    label{
-                        margin: 0;
-                        @include flex-center;
-                        width: 100%;
-                        justify-content: start;
-                    }
-                    input{
-                        @include flex-center;
-                        text-align: start;
-                        color:$font-color-gray-opacity ;
-                        @include font-size-lighter-md;
-                        border: 1px solid $page3-border;
-                        border-radius: 8px;
-                        margin: 0;
-                        margin-left: 20px;
-                        padding-right: 5px;
-                        width: 90%;
-                        height: 40px;
-        
-        
-                    }
-                }
-                .label1{
-                    margin: 0;
-                    width: 100%;
-                    height: 100%;
-                    @include flex-center-column;
-                    gap: 10px;
-                }
-                
-            }
-            .section-main{
-                width: 100%;
-                height:55% ;
-                @include flex-center-column;
-                justify-content: start;
-                align-items: start;
-                text-align: start;
-                form{
-                    @include flex-center-column;
-                    text-align: start;
-                    width: 100%;
-                    height: 100%;
-                    label{
-        
-                        @include flex-center;
-                        justify-content: start;
-                        margin: 0;
-                    }
-                    input{
-                        font-family: $font-stack;
-                        width: 100%;
-                        height: 40px;
-                        color:$font-color-gray-opacity ;
-                        @include font-size-lighter-md;
-                        border: 1px solid $page3-border;
-                        border-radius: 6px;
-                        margin: 0;
-                        padding-right: 5px;
-                        
-                      
-                        
-                         }         
-                .textmore{
-                    width: 100%;
-                    height: 200px;
-                            }        
-                    .label2{
-                        width: 90%;
-                        height: 50%;
-                        @include flex-center-column;
-                        align-items: start;
-                        gap: 10px
-                        
-                    
-                    
-                    }
-                }
-        
-            }
-            button{
-                @include flex-center;
-                width: 92%;
-                height: 50px;
-                font-family: $font-stack;
-                color: $font-color-white;
-                @include font-size-lighter-md;
-                background-color: $background-page3;
-                border-radius: 6px;
-                border: none;
-        
-            }
-            
-            
-        
-        
-        
-        
-            
-            }
-        
-        
-            .callMe-down{
-                display: none;
-                width: 100%;
-                height: 200px;
+                width: 40%;
+                height: 100%;
                 gap: 10px;
-                strong{
-                    @include flex-center;
-                    justify-content: start;
-                    gap: 5px;
-                    width: 50%;
-                    height: 60%;
-                    border: 1px solid #8080803b;
-                    border-radius:14px;
-                    span{
-                        @include flex-center;
-                        width: 20%;
-                        height: 100%;
-                        border: none;
-                    }
-                    a{
-                        width: 40%;
-                        color: $font-color-black;
-                        text-decoration-line:none ;
-                    }
+                @include flex-center-column;
+                justify-content: start;
+                text-align: start;
+                align-items: start;
+                h1{
+                    margin: 0;
+                    font-family: $font-stack;
+                    @include font-size-bold-lg;
+        
                 }
-
+                h2{
+                    margin: 0;
+                    color: $font-color-gray-opacity;
+                    font-family: $font-stack;
+                    @include font-size-lighter-md-lg;
+        
+                }
+                p{
+                    @include font-size-lighter-sm; 
+                }
             }
-            .socialmedia-phone{
-                display: none;
-                width: 90%;
-                height: 150px;
-                border-radius: 14px;
-                gap: 100px;
-                border: 1px solid rgba(128, 128, 128, 0.358);
-                a{
-                    text-decoration-line:none ;
-                    color: $font-color-black;
-                    @include font-size-bold-md-lg;
-                    
-                    
-                }
-                span{
-                    @include flex-center;
-                    text-decoration-line:none ;
-                    border: none;
-                }
-                
-           
-            }
-
-
-
+        
         }
-
+        
+        }
+        ///// ------ finsh nav bar + header + main header -----////
         /// finish main body-----
-
         //footer scss
+        .circle-end{
+            display: none;
+        }
         footer {
             font-family: $font-stack;
             margin-top: 100px;
@@ -2341,9 +1961,9 @@ body{
               }
             }
           }
-        
     }
 /////   larg desktop min 1280  be more 
+/// چک شد !!!!!!!!!
     @media only screen and (min-width:$size-largdesktop){
         
 
@@ -2364,7 +1984,7 @@ body{
               position: fixed;
               margin: 0;
               padding: 0;
-              height: 10%;
+              height: 11%;
               width: 100%;
               @include flex-center;
               background-color: $primary-background-color;
@@ -2496,7 +2116,7 @@ body{
                       cursor: pointer;
                       text-decoration-line: none;
                     }
-                    :nth-child(3) {
+                    :nth-child(2) {
                       color: $items-color-primary;
                       @include font-size-lighter-sm;
                       li {
@@ -2692,280 +2312,149 @@ body{
             }
           }
         
-        //// main page 3
+        //// main page 2
+        
         main{
             font-family: $font-stack;
-            position: relative;
-            border-radius: 24px;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        width: 90%;
+        height: 800px;
+        @include flex-center;
+        
+        .about{
             @include flex-center;
-            justify-content: start;
-            border: 1px solid #80808035;
-            box-shadow: 0 0 1px #80808035;
-            width: 80%;
-            height: 700px;
+            width: 100%;
+            height: 100%;
             margin: 0;
-            padding: 0 50px 0 50px;
-                gap: 20px;
-            .section-right{
-                height:70%;
-                width: 50%;
-                padding: 0;
-                margin: 0 20px;
+            gap: 50px;
+        
+            &-up{
+                display: none;
+            }
+
+            &-left{
                 @include flex-center-column;
                 justify-content: start;
-                align-items: start;
-                text-align: start;
-                .callMe{
-                    @include flex-center-column;
-                    justify-content: start;
-                    text-align: start;
+                width: 50%;
+                height: 100%;
+                img{
                     width: 100%;
-                    height: 100%;
-                    gap: 25px;
-                    margin: 0;
-                    padding: 0;
-                    p{
-                        margin: 0;
-                        width: 100%;
-                        @include font-size-lighter-md-p;
-                    }
-                h1{
-                    width: 100%;
-                    text-align: start;
-                    margin: 5px 0 0 0;
-                    @include font-size-bold-md-lg;
+                    height: 350px;
+                    border-radius: 24px;
+                    object-fit: cover;
                 }
-                strong{
+                &-text{
+                    border-radius: 24px;
+                    box-shadow: 0 2px 2px #00000008;
+                    border: 1px solid #F5F6F8;
+                    @include flex-center-column;
                     width: 100%;
-                    color: $font-color-gray-opacity;
-                    @include font-size-lighter-sm;
-                    @include flex-center;
-                    gap: 35px;
-                    text-align: start;
-                    a{
+                    height: 45%;
+                    .text-up{
+                        @include flex-center;
                         width: 100%;
-                        @include font-size-lighter-md;
-                        color: $font-color-black;
-                        text-decoration-line: none;                    
-                    }
-                    span{
-                        color:$font-color-black;
+                        height:100px;
                         margin: 0;
-                        @include font-size-lighter-md;
-                        margin-top: 10px;
                         padding: 0;
-                        border: none;
+                        gap: 20px;
+                        section{
+                            border-radius: 24px;
+                            border: 1px solid #F5F5F5;
+                            width: 230px;
+                            height: 112px;
+                            background-color:$color-background-card;
+                            @include font-size-bold-md-lg;
+                            font-family: $font-stack;
+                            @include flex-center-column;
+                            align-items: start;
+                            padding: 0;
+                            padding-right: 20px;
+                            margin: 0;
+                            margin-right: 10px;
+                            text-align: start;
+                            box-shadow: 0 2px 2px #00000008;
+                            :last-child{
+                            @include font-size-lighter-md;
+                            color: $font-color-gray-opacity;
+                        }                    
+                        }
                     }
-                    
+                    .text-down{
+                        width: 100%;
+                        height:100px;
+                        @include flex-center;
+                        width: 100%;
+                        height:100px;
+                        margin: 0;
+                        margin-top: 30px;
+                        padding: 0;
+                        gap: 20px;
+                        section{
+                            border: 1px solid #F5F5F5;
+                            border-radius: 24px;
+                            width: 230px;
+                            height: 112px;
+                            background-color:$color-background-card;
+                            @include font-size-bold-md-lg;
+                            font-family: $font-stack;
+                            @include flex-center-column;
+                            align-items: start;
+                            padding: 0;
+                            padding-right: 20px;
+                            margin: 0;
+                            margin-right: 10px;
+                            text-align: start;
+                            box-shadow: 0 2px 2px #00000008;
+                            :last-child{
+                            @include font-size-lighter-md;
+                            color: $font-color-gray-opacity;
+                        }                    
+                        }
+                    }
                 }
             }
-        .socialmedia-desk{
-            @include flex-center;
-            justify-content: start;
-            gap: 60px;
-            width: 70%;
-            a{
-                color: $font-color-black;
-                text-decoration-line:none; 
-            }
-            span{
-                @include font-size-bold-md-lg;
-                border: none;
-            }
-        }
-        }
-        
-        span{
-            display: none;
-            width: 0;
-            height: 85%;
-            border: 1px solid #E0E0E0;
-            
-        
-        }
-        
-        /////     left============
-        
-            .section-left{
-                border: 1px solid $color-background-page3;
-                box-shadow: 0 0 2px $font-color-gray-opacity ;
-                border-radius: 16px;
-                padding: 20px;
+            &-right{
+                padding: 0;
                 margin: 0;
-                margin-top: 15px;
-                font-family: $font-stack;
-                height: 80%;
-                width: 50%;
+                width: 40%;
+                height: 100%;
+                gap: 10px;
                 @include flex-center-column;
                 justify-content: start;
-                gap: 70px;
-                
-            .section-up{
-                @include flex-center;
-                align-items: start;
                 text-align: start;
-                width: 100%;
-                height: 10%;
-                form{
-                    gap: 1px;
-                    @include flex-center;
-                    label{
-                        margin: 0;
-                        @include flex-center;
-                        width: 80%;
-                        justify-content: start;
-                    }
-                    input{
-                        @include flex-center;
-                        text-align: start;
-                        color:$font-color-gray-opacity ;
-                        @include font-size-lighter-md;
-                        border: 1px solid $page3-border;
-                        border-radius: 8px;
-                        margin: 0;
-                        margin-left: 20px;
-                        padding-right: 10px;
-                        width: 70%;
-                        height: 45px;
-        
-        
-                    }
-                }
-                .label1{
+                align-items: start;
+                h1{
                     margin: 0;
-                    width: 70%;
-                    height: 100%;
-                    @include flex-center-column;
-                    gap: 10px;
+                    font-family: $font-stack;
+                    @include font-size-bold-lg;
+        
                 }
-                
-            }
-            .section-main{
-                width: 100%;
-                height:55% ;
-                @include flex-center-column;
-                justify-content: start;
-                align-items: start;
-                text-align: start;
-                gap: 10px;
-                form{
-                    @include flex-center-column;
-                    text-align: start;
-                    width: 100%;
-                    height: 100%;
-                    label{
+                h2{
+                    margin: 0;
+                    color: $font-color-gray-opacity;
+                    font-family: $font-stack;
+                    @include font-size-lighter-md-lg;
         
-                        @include flex-center;
-                        justify-content: start;
-                        margin: 0;
-                    }
-                    input{
-                        font-family: $font-stack;
-                        width: 92%;
-                        height: 45px;
-                        color:$font-color-gray-opacity ;
-                        @include font-size-lighter-md;
-                        border: 1px solid $page3-border;
-                        border-radius: 6px;
-                        margin: 0;
-                        padding-right: 10px;
-                      
-                        
-                         }         
-                .textmore{
-                    width: 92%;
-                    height: 200px;
-                            }        
-                    .label2{
-                        width: 90%;
-                        height: 50%;
-                        @include flex-center-column;
-                        align-items: start;
-                        gap: 10px
-                        
-                    
-                    
-                    }
                 }
-        
-            }
-            button{
-                @include flex-center;
-                width: 92%;
-                height: 50px;
-                font-family: $font-stack;
-                color: $font-color-white;
-                @include font-size-lighter-md;
-                background-color: $background-page3;
-                border-radius: 6px;
-                border: none;
-        
-            }
-            
-            
-        
-        
-        
-        
-            
-            }
-        
-        
-            .callMe-down{
-                display: none;
-                width: 100%;
-                height: 200px;
-                gap: 10px;
-                strong{
-                    @include flex-center;
-                    justify-content: start;
-                    gap: 5px;
-                    width: 50%;
-                    height: 60%;
-                    border: 1px solid #8080803b;
-                    border-radius:14px;
-                    span{
-                        @include flex-center;
-                        width: 20%;
-                        height: 100%;
-                        border: none;
-                    }
-                    a{
-                        width: 40%;
-                        color: $font-color-black;
-                        text-decoration-line:none ;
-                    }
+                p{
+                    @include font-size-lighter-sm; 
                 }
-
             }
-            .socialmedia-phone{
-                display: none;
-                width: 90%;
-                height: 150px;
-                border-radius: 14px;
-                gap: 100px;
-                border: 1px solid rgba(128, 128, 128, 0.358);
-                a{
-                    text-decoration-line:none ;
-                    color: $font-color-black;
-                    @include font-size-bold-md-lg;
-                    
-                    
-                }
-                span{
-                    @include flex-center;
-                    text-decoration-line:none ;
-                    border: none;
-                }
-                
-           
-            }
-
-
-
+        
         }
-        /// finish main body-----    
+        
+        }
+        
+        ///// ------ finsh nav bar + header + main header -----////
+        
+        
+        /// finish main body----- 
         //footer scss
+        .circle-end{
+            display: none;
+        }
         footer {
             font-family: $font-stack;
             margin-top: 100px;
@@ -3092,6 +2581,7 @@ body{
             }
           }
 
+
     }
 
 
@@ -3100,46 +2590,4 @@ body{
 
 
 
-
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
