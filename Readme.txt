@@ -1,9 +1,6 @@
 <a style="font-size:16px; text-decoration:none;" href="https://github.com/Erfanlab/ErfanLabbafi/tree/main
 ">ErfanLabbafi/
 </a>
-
-<hr>
-<hr>
 <h1>
 New version portfolio + New design
 </h1>
